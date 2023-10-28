@@ -12,45 +12,29 @@ public class Dialogue : MonoBehaviour
 
     // to track which part of convo
     private int index;
-
-    private bool inContact = false;  // Add this flag
-
     private bool dialogueStarted = false;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("touch something");
+    private TriggerDialogue triggerDialogue; // Reference to the TriggerDialogue script
 
-        if (other.CompareTag("Player"))
-        {
-            Debug.Log("touch player");
-
-            inContact = true;
-            //textComponent.text = string.Empty;
-            StartDialogue();
-
-        }
-    }
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        inContact = false;  
-    //    }
-    //}
+    public static Dialogue instance;
 
     private void Start()
     {
-        textComponent.text = string.Empty;
-        //StartDialogue();
+        Debug.Log("this dialogue running");
+        //gameObject.SetActive(false);
+        triggerDialogue = gameObject.AddComponent<TriggerDialogue>(); // Get a reference to the TriggerDialogue script
+        Debug.Log(triggerDialogue);
     }
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0) && dialogueStarted )
+
+        Debug.Log(triggerDialogue.IsInContact());
+
+        if(triggerDialogue != null && triggerDialogue.IsInContact() && Input.GetMouseButtonDown(0))
         {
-            if(textComponent.text == lines[index])
+            //Debug.Log(textComponent.text);
+            if (textComponent.text == lines[index])
             {
                 NextLine();
             }
@@ -60,25 +44,29 @@ public class Dialogue : MonoBehaviour
                 textComponent.text = lines[index];
             }
         }
+            
     }
 
 
-    void StartDialogue()
+    public void StartDialogue()
     {
+        Debug.Log("start dialogue is running");
         index = 0;
         dialogueStarted = true;
+        textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
+        
     }
 
     IEnumerator TypeLine()
     {
 
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
-
         }
+       
     }
 
     void NextLine()
@@ -87,10 +75,17 @@ public class Dialogue : MonoBehaviour
         {
             index++;
             textComponent.text = string.Empty;
-            StartCoroutine (TypeLine());
+            StartCoroutine(TypeLine());
         }
         else
         {
+            dialogueStarted = false;
+            textComponent.text = string.Empty;
+            for (int i = 0; i < gameObject.transform.childCount; i++)
+            {
+                gameObject.transform.GetChild(i).gameObject.SetActive(false);
+            }
+
             gameObject.SetActive(false);
         }
     }
