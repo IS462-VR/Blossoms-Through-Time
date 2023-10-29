@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
+    private CanvasGroup _canvasGrp = null;
 
     public string[] lines;
     public float textSpeed;
@@ -14,32 +16,29 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool dialogueStarted = false;
 
-    private TriggerDialogue triggerDialogue; // Reference to the TriggerDialogue script
+    private void Awake() {
+        _canvasGrp = GetComponent<CanvasGroup>();
+        Hide();
 
-    public static Dialogue instance;
-
-    private void Start()
-    {
-        Debug.Log("this dialogue running");
-        //gameObject.SetActive(false);
-        triggerDialogue = gameObject.AddComponent<TriggerDialogue>(); // Get a reference to the TriggerDialogue script
-        Debug.Log(triggerDialogue);
+        _hasActiveDialogue = false;
     }
 
+    private void Show() { _canvasGrp.alpha = 1.0f; }
+    private void Hide() { _canvasGrp.alpha = 0.0f; }
+
+    private bool _hasActiveDialogue = false;
+    private Coroutine _typeLineCoroutine = null;
     private void Update()
     {
-
-        Debug.Log(triggerDialogue.IsInContact());
-
-        if(triggerDialogue != null && triggerDialogue.IsInContact() && Input.GetMouseButtonDown(0))
-        {
-            //Debug.Log(textComponent.text);
+        if(_hasActiveDialogue && Input.GetMouseButtonDown(0)) {
+            // check if all text are out
             if (textComponent.text == lines[index])
             {
                 NextLine();
             }
             else
             {
+                // interrupts with text animation and jump to end of line
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
@@ -48,15 +47,29 @@ public class Dialogue : MonoBehaviour
     }
 
 
-    public void StartDialogue()
-    {
-        Debug.Log("start dialogue is running");
+    public void LoadDialogueLines(string[] newLinesToBeLoaded) {
+        lines = newLinesToBeLoaded;
+    }
+
+    public void StartDialogue() {
         index = 0;
         dialogueStarted = true;
         textComponent.text = string.Empty;
-        StartCoroutine(TypeLine());
-        
+        Show();
+        _hasActiveDialogue = true;
+        // if one coroutine is running, stop this
+        // typelinecoroutine is to type char one by one
+        if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+        _typeLineCoroutine = StartCoroutine(TypeLine());
     }
+
+    public void EndDialogue() {
+        if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+        Hide();
+        _hasActiveDialogue = false;
+        dialogueStarted = false;
+    }
+
 
     IEnumerator TypeLine()
     {
@@ -69,25 +82,15 @@ public class Dialogue : MonoBehaviour
        
     }
 
-    void NextLine()
+    private void NextLine()
     {
-        if(index < lines.Length - 1)
-        {
+        if(index < lines.Length - 1) {
             index++;
             textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
+            if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+            _typeLineCoroutine = StartCoroutine(TypeLine());
         }
-        else
-        {
-            dialogueStarted = false;
-            textComponent.text = string.Empty;
-            for (int i = 0; i < gameObject.transform.childCount; i++)
-            {
-                gameObject.transform.GetChild(i).gameObject.SetActive(false);
-            }
-
-            gameObject.SetActive(false);
-        }
+        else { EndDialogue(); }
     }
 
 }
