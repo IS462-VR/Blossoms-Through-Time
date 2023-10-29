@@ -855,18 +855,18 @@
             "actions": [
                 {
                     "name": "Teleport Select",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "cbeaf823-3b69-4004-8ec8-13ea2ca3fc31",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
                 },
                 {
                     "name": "Teleport Mode Activate",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "a21db72c-4843-4839-b4d0-3ce8d287cb86",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -940,11 +940,33 @@
                 },
                 {
                     "name": "",
+                    "id": "fc635916-a9c9-4be5-9d0f-4c5738ef7b88",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8da6ed3a-f621-49fe-8c76-1f6b7d7754d6",
                     "path": "<XRController>{LeftHand}/Primary2DAxis",
                     "interactions": "Sector(directions=1)",
                     "processors": "",
                     "groups": "Noncontinuous Move",
+                    "action": "Teleport Mode Activate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1763ef67-4b23-4518-a6bb-9bfee7d54471",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
                     "action": "Teleport Mode Activate",
                     "isComposite": false,
                     "isPartOfComposite": false
