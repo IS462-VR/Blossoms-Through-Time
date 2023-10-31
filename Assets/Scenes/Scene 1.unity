@@ -4193,8 +4193,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4050575302136516, guid: 7df36f4afc1dd884e81156cd2cb6545d, type: 3}
   m_PrefabInstance: {fileID: 642793536}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &651837256
 GameObject:
   m_ObjectHideFlags: 0
@@ -4562,7 +4560,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4271728572718218, guid: bce0c9523691df448b83c8c972060b2c, type: 3}
   m_PrefabInstance: {fileID: 654349320}
   m_PrefabAsset: {fileID: 0}
->>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.)
 --- !u!1001 &704466998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4840,7 +4837,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 45d3fd93a0c7c0c42a6defdfd7563d03, type: 3}
   m_PrefabInstance: {fileID: 824762029}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1001 &830471858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4898,13 +4894,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfa57343a0e53e7469fafa58f8c3b61e, type: 3}
-=======
 --- !u!4 &825032341 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a6d64ae46bfed4444ab811ec4fb02fd2, type: 3}
   m_PrefabInstance: {fileID: 121604104}
   m_PrefabAsset: {fileID: 0}
->>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.)
 --- !u!1001 &840162604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5819,11 +5813,8 @@ Transform:
   - {fileID: 2131555027}
   - {fileID: 713422380}
   - {fileID: 824762030}
-<<<<<<< HEAD
   - {fileID: 1637825494}
-=======
   - {fileID: 825032341}
->>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.)
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &946010445
@@ -9326,7 +9317,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4659579814028464, guid: 9020d2933ec6c0544965ea4b12952c42, type: 3}
   m_PrefabInstance: {fileID: 1439159415}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1001 &1454762277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9404,7 +9394,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce0c9523691df448b83c8c972060b2c, type: 3}
-=======
 --- !u!1 &1440710843
 GameObject:
   m_ObjectHideFlags: 0
@@ -9507,7 +9496,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
->>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.)
 --- !u!1001 &1467243006
 PrefabInstance:
   m_ObjectHideFlags: 0
