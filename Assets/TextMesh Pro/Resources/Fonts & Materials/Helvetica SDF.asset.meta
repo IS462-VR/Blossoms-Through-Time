@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Grass.meta
+guid: 8e327a2bbdd3247ffae1844094820f02
+folderAsset: yes
+DefaultImporter:
+========
+guid: 34d2a7e5280024f14aa221fd49e74a25
+NativeFormatImporter:
+>>>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.):Assets/TextMesh Pro/Resources/Fonts & Materials/Helvetica SDF.asset.meta
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
