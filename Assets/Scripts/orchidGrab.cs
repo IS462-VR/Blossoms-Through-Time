@@ -9,7 +9,7 @@ public class orchidGrab : MonoBehaviour
     {
         // Load the scene
         Debug.Log("Grabbed");
-        SceneManager.LoadScene("Scene 2");
+        SceneManager.LoadScene("Scene 2");   
     }
     // Start is called before the first frame update
     void Start()
