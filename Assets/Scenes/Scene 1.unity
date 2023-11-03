@@ -1638,7 +1638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.41
+      value: 33.420155
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1646,27 +1646,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.47000003
+      value: 0.4482578
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.6830126
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071069
+      value: -0.6830128
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.18301278
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.18301271
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -1674,7 +1674,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       propertyPath: m_DynamicOccludee
@@ -1695,6 +1695,12 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1530531027}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 554552997}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 50a7f3491a51548038c0c7bb94a56912, type: 3}
       insertIndex: -1
       addedObject: {fileID: 733002984}
@@ -3395,6 +3401,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4790057636653266, guid: e64e0b484ac273644af92dc0e00601a3, type: 3}
   m_PrefabInstance: {fileID: 552632014}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &554552996
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 554552997}
+  - component: {fileID: 554552998}
+  m_Layer: 10
+  m_Name: GripTransformLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &554552997
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554552996}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.6648753, y: -0.072944775, z: -0.08166503, w: 0.7388848}
+  m_LocalPosition: {x: 0.00024, y: 0.00008, z: 0.00175}
+  m_LocalScale: {x: 0.01, y: 0.009999999, z: 0.009999999}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653507876304}
+  m_LocalEulerAnglesHint: {x: -6.0410004, y: -12.568, z: -0.046}
+--- !u!114 &554552998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554552996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPoseType: 1
+  SelectedHandPose: {fileID: 0}
+  HandPose: 50
+  LeftHandIsValid: 1
+  RightHandIsValid: 0
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0.195
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
 --- !u!1001 &575369230
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4429,15 +4491,15 @@ MonoBehaviour:
   BeingHeld: 0
   GrabButton: 2
   Grabtype: 2
-  GrabPhysics: 4
-  GrabMechanic: 1
-  GrabSpeed: 10
-  RemoteGrabbable: 0
+  GrabPhysics: 0
+  GrabMechanic: 0
+  GrabSpeed: 20
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 1
+  RemoteGrabDistance: 2.5
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
-  BreakDistance: 0
+  BreakDistance: 1
   HideHandGraphics: 0
   ParentToHands: 1
   ParentHandModel: 1
@@ -4447,10 +4509,10 @@ MonoBehaviour:
   ForceDisableKinematicOnDrop: 0
   InstantMovement: 0
   MakeChildCollidersGrabbable: 0
-  handPoseType: 1
+  handPoseType: 0
   SelectedHandPose: {fileID: 0}
-  CustomHandPose: 0
-  SecondaryGrabBehavior: 2
+  CustomHandPose: 50
+  SecondaryGrabBehavior: 0
   TwoHandedPosition: 0
   TwoHandedPostionLerpAmount: 0.5
   TwoHandedRotation: 1
@@ -4479,7 +4541,9 @@ MonoBehaviour:
   SecondaryLookOffset: {x: 0, y: 0, z: 0}
   SecondaryLookAtTransform: {fileID: 0}
   LocalOffsetTransform: {fileID: 0}
-  GrabPoints: []
+  GrabPoints:
+  - {fileID: 1530531027}
+  - {fileID: 554552997}
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
@@ -4654,7 +4718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RingOnValidPickup: 1
   RingOnValidRemotePickup: 1
-  RingHelperScale: 0.01
+  RingHelperScale: 0.2
 --- !u!64 &648978895
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10130,6 +10194,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4518727465989056, guid: 09a3b44b8937d6245b39d930062109c6, type: 3}
   m_PrefabInstance: {fileID: 1529327965}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1530531026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530531027}
+  - component: {fileID: 1530531028}
+  m_Layer: 10
+  m_Name: GripTransformRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530531027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530531026}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.66487634, y: 0.07294549, z: 0.08165916, w: 0.7388845}
+  m_LocalPosition: {x: 0.000012, y: 0.000366, z: 0.001632}
+  m_LocalScale: {x: 0.009999999, y: 0.009999998, z: 0.01}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 543450653507876304}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530531028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530531026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab52d2f563d6a2547a95671c153ebbb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handPoseType: 0
+  SelectedHandPose: {fileID: 0}
+  HandPose: 50
+  LeftHandIsValid: 0
+  RightHandIsValid: 1
+  HandPosition: {fileID: 0}
+  MaxDegreeDifferenceAllowed: 360
+  IndexBlendMin: 0
+  IndexBlendMax: 0.195
+  ThumbBlendMin: 0
+  ThumbBlendMax: 0
+  ShowAngleGizmo: 1
 --- !u!1001 &1537563784
 PrefabInstance:
   m_ObjectHideFlags: 0
