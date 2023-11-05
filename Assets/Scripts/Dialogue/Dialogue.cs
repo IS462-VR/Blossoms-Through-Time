@@ -16,8 +16,7 @@ public class Dialogue : MonoBehaviour
     private int index;
     private bool dialogueStarted = false;
 
-    private void Awake()
-    {
+    private void Awake() {
         _canvasGrp = GetComponent<CanvasGroup>();
         Hide();
 
@@ -31,8 +30,7 @@ public class Dialogue : MonoBehaviour
     private Coroutine _typeLineCoroutine = null;
     private void Update()
     {
-        if (_hasActiveDialogue && Input.GetMouseButtonDown(0))
-        {
+        if(_hasActiveDialogue && Input.GetMouseButtonDown(0)) {
             //Debug.Log(textComponent.text);
             if (textComponent.text == lines[index])
             {
@@ -44,17 +42,15 @@ public class Dialogue : MonoBehaviour
                 textComponent.text = lines[index];
             }
         }
-
+            
     }
 
 
-    public void LoadDialogueLines(string[] newLinesToBeLoaded)
-    {
+    public void LoadDialogueLines(string[] newLinesToBeLoaded) {
         lines = newLinesToBeLoaded;
     }
 
-    public void StartDialogue()
-    {
+    public void StartDialogue() {
         Debug.Log("start dialogue is running");
         index = 0;
         dialogueStarted = true;
@@ -65,8 +61,7 @@ public class Dialogue : MonoBehaviour
         _typeLineCoroutine = StartCoroutine(TypeLine());
     }
 
-    public void EndDialogue()
-    {
+    public void EndDialogue() {
         if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
         Hide();
         _hasActiveDialogue = false;
@@ -82,13 +77,12 @@ public class Dialogue : MonoBehaviour
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
-
+       
     }
 
     private void NextLine()
     {
-        if (index < lines.Length - 1)
-        {
+        if(index < lines.Length - 1) {
             index++;
             textComponent.text = string.Empty;
             if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
