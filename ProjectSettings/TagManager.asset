@@ -12,6 +12,9 @@ TagManager:
   - Bowl With Plant
   - Bowl
   - Pestle
+  - NeemLeaf
+  - BananaLeaf
+  - Roselle
   layers:
   - Default
   - TransparentFX
