@@ -459,9 +459,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -1505,11 +1505,11 @@ MonoBehaviour:
   GrabButton: 2
   Grabtype: 2
   GrabPhysics: 0
-  GrabMechanic: 0
+  GrabMechanic: 1
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -1592,18 +1592,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9597492805115465185f7cd95970ef80, type: 3}
   m_PrefabInstance: {fileID: 961539615}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &77479028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77479016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13591ebe363c1044da3b577019d69052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &77479029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2696,7 +2684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0034
+      value: -0.004
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2716,11 +2704,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0866
+      value: -0.123
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.1421
+      value: 0.187
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4230,9 +4218,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -4482,11 +4470,11 @@ MonoBehaviour:
   GrabButton: 2
   Grabtype: 2
   GrabPhysics: 0
-  GrabMechanic: 0
+  GrabMechanic: 1
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -4625,18 +4613,6 @@ MonoBehaviour:
   onSnapZoneExit:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &305123514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305123501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13591ebe363c1044da3b577019d69052, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &315260612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4919,7 +4895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319946714}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.77730435, z: 0, w: 0.6291248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.179, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5536,8 +5512,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: RemoteGrabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: RemoteGrabDistance
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: GrabPoints.Array.size
@@ -11239,11 +11219,11 @@ MonoBehaviour:
   GrabButton: 2
   Grabtype: 2
   GrabPhysics: 0
-  GrabMechanic: 1
+  GrabMechanic: 0
   GrabSpeed: 10
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -11731,7 +11711,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 11fee93952d9c454580257b35c49c728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.073
+      value: -0.007
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 11fee93952d9c454580257b35c49c728, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11803,9 +11783,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11fee93952d9c454580257b35c49c728, type: 3}
       insertIndex: -1
       addedObject: {fileID: 305123513}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 11fee93952d9c454580257b35c49c728, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 305123514}
   m_SourcePrefab: {fileID: 100100000, guid: 11fee93952d9c454580257b35c49c728, type: 3}
 --- !u!1 &876462497
 GameObject:
@@ -12171,8 +12148,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5037272, y: 2.852227, z: 2.0487895}
-  m_Center: {x: -0.15661418, y: -0.27705085, z: -0.22369516}
+  m_Size: {x: 1.4597435, y: 1.1372967, z: 1.1745119}
+  m_Center: {x: -0.06521034, y: -0.22575712, z: -0.66083384}
 --- !u!23 &927925178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12522,8 +12499,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: RemoteGrabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: RemoteGrabDistance
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: GrabPoints.Array.size
@@ -12540,6 +12521,26 @@ PrefabInstance:
     - target: {fileID: 4614674698221498274, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: m_Size.y
+      value: 0.438061
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: m_Size.z
+      value: 0.6727602
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: m_Center.x
+      value: 0.01954864
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: m_Center.y
+      value: 0.50594085
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: m_Center.z
+      value: 0.012107794
       objectReference: {fileID: 0}
     - target: {fileID: 5131137085598260152, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: m_IsTrigger
@@ -12834,9 +12835,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -12980,7 +12981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9597492805115465185f7cd95970ef80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.031
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9597492805115465185f7cd95970ef80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13052,9 +13053,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9597492805115465185f7cd95970ef80, type: 3}
       insertIndex: -1
       addedObject: {fileID: 77479029}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9597492805115465185f7cd95970ef80, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 77479028}
   m_SourcePrefab: {fileID: 100100000, guid: 9597492805115465185f7cd95970ef80, type: 3}
 --- !u!1001 &963598669
 PrefabInstance:
@@ -15152,7 +15150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0695
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15172,11 +15170,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0995
+      value: -0.118
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.116
+      value: 0.175
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15357,8 +15355,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5037272, y: 2.852227, z: 2.0487895}
-  m_Center: {x: -0.15661418, y: -0.27705085, z: -0.22369516}
+  m_Size: {x: 1.5722694, y: 1.1932387, z: 1.3628922}
+  m_Center: {x: -0.62234306, y: -0.5331352, z: -0.14157486}
 --- !u!23 &1124849170
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15760,6 +15758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 714430063}
     m_Modifications:
+    - target: {fileID: 3926312142079514297, guid: dffd1a5792bfd5a4fb85b89dc6d27afa, type: 3}
+      propertyPath: m_Name
+      value: GripTransform
+      objectReference: {fileID: 0}
     - target: {fileID: 8051726691135695818, guid: dffd1a5792bfd5a4fb85b89dc6d27afa, type: 3}
       propertyPath: m_Name
       value: uselessflower2
@@ -15864,9 +15866,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 1
   GrabSpeed: 10
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -16733,7 +16735,7 @@ Transform:
   m_GameObject: {fileID: 1246849603}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.76757, y: 76.729515, z: 95.56351}
+  m_LocalPosition: {x: -23.76757, y: 76.796, z: 95.56351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17607,9 +17609,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -18368,9 +18370,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -18746,9 +18748,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -19407,9 +19409,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -19562,8 +19564,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5037272, y: 2.852227, z: 2.0487895}
-  m_Center: {x: -0.15661418, y: -0.27705085, z: -0.22369516}
+  m_Size: {x: 1.9779358, y: 2.852227, z: 1.7848177}
+  m_Center: {x: -0.4195099, y: -0.27705085, z: -0.35568094}
 --- !u!23 &1433230780
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20743,9 +20745,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -21085,9 +21087,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -21386,9 +21388,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -21538,7 +21540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.0285
+      value: -0.029
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -21558,11 +21560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.0444
+      value: 0.069
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.1024
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -22527,9 +22529,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -23816,8 +23818,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
+      propertyPath: RemoteGrabbable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: RemoteGrabDistance
-      value: 2
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1956119285540167252, guid: 1308dbf86a65943459f1eb2821f00f07, type: 3}
       propertyPath: GrabPoints.Array.size
@@ -24367,9 +24373,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -25205,7 +25211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895839014}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.97310287, z: 0, w: -0.23037095}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.199, z: -0.019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25626,9 +25632,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -25753,9 +25759,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 1
   GrabSpeed: 10
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -26167,9 +26173,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -26719,9 +26725,9 @@ MonoBehaviour:
   GrabPhysics: 0
   GrabMechanic: 0
   GrabSpeed: 15
-  RemoteGrabbable: 0
+  RemoteGrabbable: 1
   RemoteGrabMechanic: 0
-  RemoteGrabDistance: 2
+  RemoteGrabDistance: 20
   ThrowForceMultiplier: 2
   ThrowForceMultiplierAngular: 1.5
   BreakDistance: 0
@@ -26917,7 +26923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0648
+      value: 0.073
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26937,11 +26943,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0994
+      value: -0.112
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0948
+      value: 0.141
       objectReference: {fileID: 0}
     - target: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -27477,8 +27483,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5037272, y: 2.852227, z: 2.0487895}
-  m_Center: {x: -0.15661418, y: -0.27705085, z: -0.22369516}
+  m_Size: {x: 0.6545334, y: 0.9858432, z: 1.2012634}
+  m_Center: {x: -0.37423706, y: -0.7060702, z: 0.021369934}
 --- !u!23 &2040888372
 MeshRenderer:
   m_ObjectHideFlags: 0
