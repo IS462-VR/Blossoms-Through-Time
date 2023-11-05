@@ -8,6 +8,10 @@ TagManager:
   - Content2
   - Content3
   - UITrigger
+  - Plant
+  - Bowl With Plant
+  - Bowl
+  - Pestle
   layers:
   - Default
   - TransparentFX
