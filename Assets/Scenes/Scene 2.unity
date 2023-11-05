@@ -651,7 +651,7 @@ Transform:
   m_GameObject: {fileID: 90018192}
   serializedVersion: 2
   m_LocalRotation: {x: -0.17264955, y: -0.17656574, z: -0.6829344, w: -0.6874717}
-  m_LocalPosition: {x: 0.22, y: 0.066, z: 0.362}
+  m_LocalPosition: {x: 0.219, y: 0.055, z: 0.362}
   m_LocalScale: {x: 1.79, y: 1.79, z: 1.79}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1493,7 +1493,7 @@ Transform:
   m_GameObject: {fileID: 207516840}
   serializedVersion: 2
   m_LocalRotation: {x: -0.1786392, y: -0.17052282, z: -0.68139225, w: -0.6889954}
-  m_LocalPosition: {x: -0.244, y: 0.077, z: 0.364}
+  m_LocalPosition: {x: -0.245, y: 0.058, z: 0.365}
   m_LocalScale: {x: 1.79, y: 1.79, z: 1.79}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1905,6 +1905,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7355802863761114554, guid: be9fe899650f3564f886f385af6d121a, type: 3}
   m_PrefabInstance: {fileID: 282190907}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &291861515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2683195716791022644, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_Name
+      value: XR Rig Advanced
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 54.429
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.921
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 45.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2683195716791022646, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
 --- !u!1001 &321179476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4800,6 +4861,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 16099561450227329, guid: 442242b3d80b34ec0888c133dfe0cf48, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 198958619953212731, guid: 442242b3d80b34ec0888c133dfe0cf48, type: 3}
       propertyPath: m_Name
       value: Terrain (2)
@@ -5413,7 +5478,7 @@ Transform:
   m_GameObject: {fileID: 1201079258}
   serializedVersion: 2
   m_LocalRotation: {x: -0.18307433, y: -0.16603072, z: -0.6802141, w: -0.6900916}
-  m_LocalPosition: {x: -0.002, y: 0.061, z: 0.357}
+  m_LocalPosition: {x: -0.002, y: 0.056, z: 0.357}
   m_LocalScale: {x: 1.79, y: 1.79, z: 1.79}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -6686,6 +6751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Terrain (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 198958619953212731, guid: 442242b3d80b34ec0888c133dfe0cf48, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6138157567850634146, guid: 442242b3d80b34ec0888c133dfe0cf48, type: 3}
       propertyPath: m_TerrainData
       value: 
@@ -6879,6 +6948,10 @@ PrefabInstance:
     - target: {fileID: 5117709272763234209, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_Name
       value: XR Rig
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117709272763234209, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5117709272763234211, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_LocalScale.x
@@ -8969,3 +9042,4 @@ SceneRoots:
   - {fileID: 1601335384}
   - {fileID: 1476770019}
   - {fileID: 369182929}
+  - {fileID: 291861515}

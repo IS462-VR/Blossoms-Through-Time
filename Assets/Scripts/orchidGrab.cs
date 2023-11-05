@@ -5,16 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class orchidGrab : MonoBehaviour
 {
+    private Rigidbody orchidRb;
+    public float delayBeforeLoad = 1.0f;
+    public string sceneToLoad = "Scene 2";
+
     public void OnGrabbed()
     {
         // Load the scene
         Debug.Log("Grabbed");
-        SceneManager.LoadScene("Scene 2");   
+        orchidRb.isKinematic = false;
+        orchidRb.useGravity = true;
+
+        StartCoroutine(WaitAndLoadScene());
+    }
+
+    IEnumerator WaitAndLoadScene()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delayBeforeLoad);
+
+        // Load the new scene
+        SceneManager.LoadScene(sceneToLoad);
     }
     // Start is called before the first frame update
     void Start()
     {
-
+        orchidRb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
