@@ -39,7 +39,11 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.44982255, g: 0.4970913, b: 0.5605631, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44704485, g: 0.4937591, b: 0.5579429, a: 1}
+>>>>>>> 5fff5159b5b09093bb8fca0274237f8e40529627
 =======
   m_IndirectSpecularColor: {r: 0.44704485, g: 0.4937591, b: 0.5579429, a: 1}
 >>>>>>> 5fff5159b5b09093bb8fca0274237f8e40529627
@@ -13887,7 +13891,11 @@ SceneRoots:
   - {fileID: 1884977357}
   - {fileID: 395292889}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 78165787}
+=======
+  - {fileID: 1112298448}
+>>>>>>> 5fff5159b5b09093bb8fca0274237f8e40529627
 =======
   - {fileID: 1112298448}
 >>>>>>> 5fff5159b5b09093bb8fca0274237f8e40529627
