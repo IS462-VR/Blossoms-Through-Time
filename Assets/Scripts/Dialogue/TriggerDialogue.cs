@@ -6,7 +6,6 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private Dialogue _dialogue = null;
 
     private const string UI_TRIGGER_TAG = "UITrigger";
-    [SerializeField] private AudioSource audioSource;
 
 
     private void OnTriggerEnter(Collider other) {
@@ -17,7 +16,7 @@ public class TriggerDialogue : MonoBehaviour
             else {
                 _dialogue.LoadDialogueLines(dialogueText.lines);
                 _dialogue.StartDialogue();
-                audioSource.Play();
+                //audioSource.Play();
             }
         }
     }
@@ -26,7 +25,6 @@ public class TriggerDialogue : MonoBehaviour
         if (other.CompareTag(UI_TRIGGER_TAG)) {
             Debug.Log("left contact w UI trigger object");
             _dialogue.EndDialogue();
-            audioSource.Stop();
         }
     }
 }
