@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/TrenchV1.unity.meta
+guid: 73f757cfa36ee4060b09d7743973bbe5
+========
+guid: e576eb459f5e24b13be9b7187939faaf
+folderAsset: yes
+>>>>>>>> 825b633f (Add fortCanningSignBoard & directionSign. Add Font. Add Buttons and Script. Add Audio.):Assets/Audio.meta
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
