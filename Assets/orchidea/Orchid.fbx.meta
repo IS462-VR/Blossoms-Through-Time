@@ -3,7 +3,22 @@ guid: 50a7f3491a51548038c0c7bb94a56912
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 9539f419a36fa49fdb7aed9365fad132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bocciolo
+    second: {fileID: 2100000, guid: 9b4a2388af43647f1890ff8cc168f3fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ramo
+    second: {fileID: 1459577010133308965, guid: ae91f2d3614ca428aa958719da891d78, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

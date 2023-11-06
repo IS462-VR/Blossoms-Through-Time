@@ -4,7 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Content1
+  - Content2
+  - Content3
   - UITrigger
+  - Plant
+  - Bowl With Plant
+  - Bowl
+  - Pestle
+  - NeemLeaf
+  - BananaLeaf
+  - Roselle
   layers:
   - Default
   - TransparentFX
