@@ -13,8 +13,10 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
 
     // to track which part of convo
-    private int index;
+    private int index = 0;
     private bool dialogueStarted = false;
+    private bool dialogueFinished = false;
+
 
     private void Awake() {
         _canvasGrp = GetComponent<CanvasGroup>();
@@ -48,24 +50,59 @@ public class Dialogue : MonoBehaviour
 
     public void LoadDialogueLines(string[] newLinesToBeLoaded) {
         lines = newLinesToBeLoaded;
+        //if (dialogueFinished)
+        //{
+        //    lines = new string[];
+        //}
     }
 
     public void StartDialogue() {
-        Debug.Log("start dialogue is running");
-        index = 0;
-        dialogueStarted = true;
-        textComponent.text = string.Empty;
-        Show();
-        _hasActiveDialogue = true;
-        if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
-        _typeLineCoroutine = StartCoroutine(TypeLine());
+        if (!dialogueStarted) {
+
+            if (dialogueFinished)
+            {
+                return;
+            }
+
+            dialogueStarted = true;
+            textComponent.text = string.Empty;
+            Show();
+            _hasActiveDialogue = true;
+            if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+            _typeLineCoroutine = StartCoroutine(TypeLine());
+        }
+        else
+        {
+            
+            if(index < lines.Length - 1)
+            {
+                index++;
+                Show();
+                textComponent.text = string.Empty;
+                _hasActiveDialogue = true;
+                if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+                _typeLineCoroutine = StartCoroutine(TypeLine());
+                Debug.Log("under here. convo started before");
+            }
+            
+           
+        }
+       
     }
 
     public void EndDialogue() {
+        Debug.Log("dialogueended");
         if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
         Hide();
         _hasActiveDialogue = false;
-        dialogueStarted = false;
+        //dialogueStarted = false;
+        // added this
+        //lines = null;
+        if (index == lines.Length)
+        {
+            dialogueFinished = true;
+        }
+
     }
 
 
