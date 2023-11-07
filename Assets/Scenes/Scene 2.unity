@@ -2504,7 +2504,7 @@ MonoBehaviour:
   textComponent: {fileID: 1149582704}
   textSpeed: 0.1
   naviSound: {fileID: 8300000, guid: 6a76e1b9611f347429473ca97d53dfa8, type: 3}
-  humanSound: {fileID: 8300000, guid: e3215e0ba6e09bb45a33c49b2511e349, type: 3}
+  humanSound: {fileID: 8300000, guid: e40027eb4c169ea48bb06fc502f2f954, type: 3}
 --- !u!225 &310422458
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -5108,8 +5108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - byebye
-  - Was cool to see u
+  - Help me please!!! *coughs*
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
