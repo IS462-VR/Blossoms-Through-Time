@@ -9,13 +9,13 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     private CanvasGroup _canvasGrp = null;
 
-    public string[] lines;
+    private DialogueText _currentDialogueText = null;
     public float textSpeed;
 
-    // to track which part of convo
-    private int index = 0;
-    private bool dialogueStarted = false;
-    private bool dialogueFinished = false;
+    
+    public AudioClip naviSound;
+    public AudioClip humanSound;
+
 
 
     private void Awake() {
@@ -34,49 +34,74 @@ public class Dialogue : MonoBehaviour
     {
         if(_hasActiveDialogue && Input.GetMouseButtonDown(0)) {
             //Debug.Log(textComponent.text);
-            if (textComponent.text == lines[index])
+            if (textComponent.text == _currentDialogueText.lines[_currentDialogueText.lineIndex])
             {
                 NextLine();
             }
             else
             {
                 StopAllCoroutines();
-                textComponent.text = lines[index];
+                textComponent.text = _currentDialogueText.lines[_currentDialogueText.lineIndex];
             }
         }
             
     }
 
 
-    public void LoadDialogueLines(string[] newLinesToBeLoaded) {
-        lines = newLinesToBeLoaded;
-        //if (dialogueFinished)
-        //{
-        //    lines = new string[];
-        //}
+    public void LoadDialogueData(DialogueText inputDialogueText) {
+        _currentDialogueText = inputDialogueText;
     }
 
     public void StartDialogue() {
-        if (!dialogueStarted) {
+        if (_currentDialogueText == null)
+        {
+            Debug.LogError("DialogueText has yet to be loaded first!!!");
+            return;
+        }
 
-            if (dialogueFinished)
+        if (!_currentDialogueText.hasDialogueStarted) {
+
+            if (_currentDialogueText.hasDialogueFinished)
             {
                 return;
             }
 
-            dialogueStarted = true;
+            _currentDialogueText.hasDialogueStarted = true;
             textComponent.text = string.Empty;
             Show();
             _hasActiveDialogue = true;
             if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
             _typeLineCoroutine = StartCoroutine(TypeLine());
+            if (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length)
+            {
+                switch (_currentDialogueText.audioType)
+                {
+                    case DialogueText.eAudioType.Navi:
+                        {
+                            _currentDialogueText.audioSource.clip = naviSound;
+                            break;
+                        }
+                    case DialogueText.eAudioType.Human:
+                        {
+                            _currentDialogueText.audioSource.clip = humanSound;
+                            break;
+                        }
+                    default:
+                        {
+                            Debug.LogWarning("No sound implemented for this type: " +  _currentDialogueText.audioType);
+                            break;
+                        }
+                }
+                
+                _currentDialogueText.audioSource.Play();
+            }
         }
         else
         {
             
-            if(index < lines.Length - 1)
+            if(_currentDialogueText.lineIndex < _currentDialogueText.lines.Length - 1)
             {
-                index++;
+                _currentDialogueText.lineIndex++;
                 Show();
                 textComponent.text = string.Empty;
                 _hasActiveDialogue = true;
@@ -85,7 +110,6 @@ public class Dialogue : MonoBehaviour
                 Debug.Log("under here. convo started before");
             }
             
-           
         }
        
     }
@@ -95,21 +119,19 @@ public class Dialogue : MonoBehaviour
         if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
         Hide();
         _hasActiveDialogue = false;
-        //dialogueStarted = false;
-        // added this
-        //lines = null;
-        if (index == lines.Length)
-        {
-            dialogueFinished = true;
-        }
 
+        if (_currentDialogueText.lineIndex == _currentDialogueText.lines.Length - 1)
+        {
+            _currentDialogueText.hasDialogueFinished = true;
+        }
+        //audioSource.Stop();
     }
 
 
     IEnumerator TypeLine()
     {
 
-        foreach (char c in lines[index].ToCharArray())
+        foreach (char c in _currentDialogueText.lines[_currentDialogueText.lineIndex].ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
@@ -119,11 +141,15 @@ public class Dialogue : MonoBehaviour
 
     private void NextLine()
     {
-        if(index < lines.Length - 1) {
-            index++;
+        if(_currentDialogueText.lineIndex < _currentDialogueText.lines.Length - 1) {
+            _currentDialogueText.lineIndex++;
             textComponent.text = string.Empty;
             if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
             _typeLineCoroutine = StartCoroutine(TypeLine());
+            if (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length)
+            {
+                _currentDialogueText.audioSource.Play();
+            }
         }
         else { EndDialogue(); }
     }
