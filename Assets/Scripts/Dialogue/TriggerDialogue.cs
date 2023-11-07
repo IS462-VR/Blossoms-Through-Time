@@ -16,7 +16,6 @@ public class TriggerDialogue : MonoBehaviour
             else {
                 _dialogue.LoadDialogueData(dialogueText);
                 _dialogue.StartDialogue();
-                //audioSource.Play();
             }
         }
     }

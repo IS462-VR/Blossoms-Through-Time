@@ -52,6 +52,36 @@ public class Dialogue : MonoBehaviour
         _currentDialogueText = inputDialogueText;
     }
 
+    public void PlayAudio()
+    {
+        if (_currentDialogueText == null)
+        {
+            Debug.LogError("DialogueText has yet to be loaded first!!!");
+            return;
+        }
+
+        switch (_currentDialogueText.audioType)
+        {
+            case DialogueText.eAudioType.Navi:
+                {
+                    _currentDialogueText.audioSource.clip = naviSound;
+                    break;
+                }
+            case DialogueText.eAudioType.Human:
+                {
+                    _currentDialogueText.audioSource.clip = humanSound;
+                    break;
+                }
+            default:
+                {
+                    Debug.LogWarning("No sound implemented for this type: " + _currentDialogueText.audioType);
+                    break;
+                }
+        }
+
+        _currentDialogueText.audioSource.Play();
+    }
+
     public void StartDialogue() {
         if (_currentDialogueText == null)
         {
@@ -74,26 +104,7 @@ public class Dialogue : MonoBehaviour
             _typeLineCoroutine = StartCoroutine(TypeLine());
             if (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length)
             {
-                switch (_currentDialogueText.audioType)
-                {
-                    case DialogueText.eAudioType.Navi:
-                        {
-                            _currentDialogueText.audioSource.clip = naviSound;
-                            break;
-                        }
-                    case DialogueText.eAudioType.Human:
-                        {
-                            _currentDialogueText.audioSource.clip = humanSound;
-                            break;
-                        }
-                    default:
-                        {
-                            Debug.LogWarning("No sound implemented for this type: " +  _currentDialogueText.audioType);
-                            break;
-                        }
-                }
-                
-                _currentDialogueText.audioSource.Play();
+                PlayAudio();
             }
         }
         else
@@ -107,7 +118,8 @@ public class Dialogue : MonoBehaviour
                 _hasActiveDialogue = true;
                 if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
                 _typeLineCoroutine = StartCoroutine(TypeLine());
-                Debug.Log("under here. convo started before");
+                
+                PlayAudio();
             }
             
         }
