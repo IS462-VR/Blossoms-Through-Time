@@ -5117,11 +5117,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - Help me please!!! *coughs*
+  - '*coughs* Help me please!!! *coughs*'
   - I am gna die
   lineClips:
-  - {fileID: 8300000, guid: e40027eb4c169ea48bb06fc502f2f954, type: 3}
-  - {fileID: 8300000, guid: e40027eb4c169ea48bb06fc502f2f954, type: 3}
+  - {fileID: 8300000, guid: 3fd7080158a7f71478f960419373e8ba, type: 3}
+  - {fileID: 8300000, guid: 3fd7080158a7f71478f960419373e8ba, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
