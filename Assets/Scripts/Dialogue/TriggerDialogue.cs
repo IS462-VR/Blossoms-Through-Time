@@ -6,6 +6,15 @@ public class TriggerDialogue : MonoBehaviour
     [SerializeField] private Dialogue _dialogue = null;
 
     private const string UI_TRIGGER_TAG = "UITrigger";
+    public AudioSource audioSource = null;
+
+    private void Awake()
+    {
+        if (audioSource == null)
+        {
+            Debug.LogError("TriggerDialogue's audioSource for lineClips not assigned!");
+        }
+    }
 
 
     private void OnTriggerEnter(Collider other) {
@@ -14,7 +23,7 @@ public class TriggerDialogue : MonoBehaviour
             DialogueText dialogueText = other.GetComponent<DialogueText>();
             if (dialogueText == null) Debug.LogError("No DialogueText found for UITrigger tagged collider. Possibly you forgot to add it!!!");
             else {
-                _dialogue.LoadDialogueData(dialogueText);
+                _dialogue.LoadDialogueData(dialogueText, audioSource);
                 _dialogue.StartDialogue();
             }
         }

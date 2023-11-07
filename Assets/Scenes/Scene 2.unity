@@ -228,6 +228,9 @@ MonoBehaviour:
   lines:
   - hi there
   - nice to meet u
+  lineClips:
+  - {fileID: 8300000, guid: 6a76e1b9611f347429473ca97d53dfa8, type: 3}
+  - {fileID: 8300000, guid: 6a76e1b9611f347429473ca97d53dfa8, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
@@ -330,7 +333,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.164
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2248,6 +2251,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue: {fileID: 310422457}
+  audioSource: {fileID: 270383999}
+--- !u!82 &270383999 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8183438871837410239, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+  m_PrefabInstance: {fileID: 291861515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &270616874 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3591018176648854851, guid: 9465c5a8f823f474db7d6547b07eb5b1, type: 3}
@@ -2426,7 +2435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183438871837410239, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8416742705891564269, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
       propertyPath: GroundedLayers.m_Bits
@@ -5109,6 +5118,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - Help me please!!! *coughs*
+  - I am gna die
+  lineClips:
+  - {fileID: 8300000, guid: e40027eb4c169ea48bb06fc502f2f954, type: 3}
+  - {fileID: 8300000, guid: e40027eb4c169ea48bb06fc502f2f954, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
@@ -5211,7 +5224,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.164
   m_Pitch: 1
   Loop: 0
   Mute: 0

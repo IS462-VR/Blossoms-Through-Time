@@ -10,6 +10,7 @@ public class Dialogue : MonoBehaviour
     private CanvasGroup _canvasGrp = null;
 
     private DialogueText _currentDialogueText = null;
+    private AudioSource _currentLinesAudioSource = null;
     public float textSpeed;
 
     
@@ -48,8 +49,9 @@ public class Dialogue : MonoBehaviour
     }
 
 
-    public void LoadDialogueData(DialogueText inputDialogueText) {
+    public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource) {
         _currentDialogueText = inputDialogueText;
+        _currentLinesAudioSource = audioSource;
     }
 
     public void PlayAudio()
@@ -142,7 +144,8 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-
+        _currentLinesAudioSource.clip = _currentDialogueText.lineClips[_currentDialogueText.lineIndex];
+        _currentLinesAudioSource.Play();
         foreach (char c in _currentDialogueText.lines[_currentDialogueText.lineIndex].ToCharArray())
         {
             textComponent.text += c;
