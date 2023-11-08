@@ -1257,8 +1257,8 @@ MonoBehaviour:
   lines:
   - ' Banana Leaf'
   - Water resistant due to its natural waxy coating, banana leaves make for good
-    temporary umbrellas
-  - 'In wartime, it was typically used for camouflage, and was easy to dispose of '
+    temporary umbrellas.
+  - In wartime, it was typically used for camouflage, and was easy to dispose of.
   textSpeed: 0.03
 --- !u!114 &29032719
 MonoBehaviour:
@@ -3170,7 +3170,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114720486}
   m_LocalRotation: {x: -0.07547913, y: -0.4980974, z: -0.043577895, w: 0.86272997}
-  m_LocalPosition: {x: 0, y: 0, z: 1.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0.913}
   m_LocalScale: {x: 0.0007499999, y: 0.004000002, z: 0.0015}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3179,7 +3179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -10, y: -60, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.3, y: 1.5}
+  m_AnchoredPosition: {x: -0.423, y: 2.527}
   m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &116707228
@@ -11064,11 +11064,10 @@ MonoBehaviour:
   lines:
   - ' Roselle '
   - A plant that can be used medicinally or in foods. High in antioxidants, roselle
-    can prevent inflammation and protect against type II diabetes, cancer, and heart
-    disease
-  - It is also useful in wartime as it is antimicrobial (prevents and treats infection),
-    antipyretic (prevent and reduce fever) and antihelminthic (treat parasitic worm
-    infections)
+    can prevent inflammation and protect against type 2 diabetes, cancer, and heart
+    disease.
+  - It is also useful in wartime as it can prevent and treat infections, and prevent
+    and reduce fever.
   textSpeed: 0.03
 --- !u!224 &636166682
 RectTransform:
@@ -12209,8 +12208,8 @@ MonoBehaviour:
   lines:
   - ' Neem Tree '
   - "Known as a \u2018miracle plant\u2019, neem tree leaves can be used in different
-    concoctions for reducing inflammation, clearing toxins and promoting healing. "
-  - It is also believed to aid conditions including chicken pox, diabetes and cancer
+    concoctions for reducing inflammation, clearing toxins and promoting healing."
+  - It is also believed to aid conditions including chicken pox, diabetes and cancer.
   textSpeed: 0.03
 --- !u!114 &718165967
 MonoBehaviour:
@@ -15593,8 +15592,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.4597435, y: 1.1372967, z: 1.1745119}
-  m_Center: {x: -0.06521034, y: -0.22575712, z: -0.66083384}
+  m_Size: {x: 1.060829, y: 0.7546701, z: 0.89031583}
+  m_Center: {x: 0.13425031, y: -0.4170666, z: -0.8029224}
 --- !u!23 &927925178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17924,8 +17923,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7123114, y: 1.3626676, z: 1.0288458}
-  m_Center: {x: -0.7152217, y: 0.7530811, z: -0.5135796}
+  m_Size: {x: 0.5939597, y: 1.3626676, z: 0.66985345}
+  m_Center: {x: -0.656046, y: 0.7530811, z: -0.69307595}
 --- !u!23 &1037294895
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17985,7 +17984,7 @@ Transform:
   m_GameObject: {fileID: 1037294893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.974, y: 57.44037, z: -8.154}
+  m_LocalPosition: {x: -36.583, y: 57.44037, z: -8.502}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19849,8 +19848,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.5722694, y: 1.1932387, z: 1.3628922}
-  m_Center: {x: -0.62234306, y: -0.5331352, z: -0.14157486}
+  m_Size: {x: 0.61058, y: 0.96345264, z: 0.8487669}
+  m_Center: {x: -1.1031879, y: -0.64802825, z: -0.2663342}
 --- !u!23 &1124849170
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19915,46 +19914,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onGrab:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InfoDialogue, Assembly-CSharp
-        m_MethodName: CanGrab
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   onRelease:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onBecomesClosestGrabbable:
     m_PersistentCalls:
       m_Calls: []
@@ -20128,11 +20091,10 @@ MonoBehaviour:
   lines:
   - ' Roselle '
   - A plant that can be used medicinally or in foods. High in antioxidants, roselle
-    can prevent inflammation and protect against type II diabetes, cancer, and heart
-    disease
-  - It is also useful in wartime as it is antimicrobial (prevents and treats infection),
-    antipyretic (prevent and reduce fever) and antihelminthic (treat parasitic worm
-    infections)
+    can prevent inflammation and protect against type 2 diabetes, cancer, and heart
+    disease.
+  - It is also useful in wartime as it can prevent and treat infections, and prevent
+    and reduce fever.
   textSpeed: 0.03
 --- !u!114 &1126932949
 MonoBehaviour:
@@ -22131,8 +22093,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.3742142, y: 0.7987156, z: 1.9542801}
-  m_Center: {x: 0.5410042, y: 0.29571533, z: -0.082042575}
+  m_Size: {x: 1.3952221, y: 0.79871553, z: 2.1451993}
+  m_Center: {x: 0.05150646, y: 0.2957148, z: 0.013416658}
 --- !u!1001 &1252923934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30788,7 +30750,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730297325}
   m_LocalRotation: {x: -0.07547913, y: 0.4980974, z: 0.043577895, w: 0.86272997}
-  m_LocalPosition: {x: 0, y: 0, z: 1.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0.663}
   m_LocalScale: {x: 0.00075, y: 0.004, z: 0.0015000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30797,7 +30759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -10, y: 60, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.3, y: 1.5}
+  m_AnchoredPosition: {x: -0.034, y: 1.995}
   m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730297327
@@ -31108,8 +31070,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.075882, y: 1.5682082, z: 0.91138864}
-  m_Center: {x: 0.10627365, y: 0.23811793, z: -1.101431}
+  m_Size: {x: 0.6906535, y: 1.5682082, z: 0.91138875}
+  m_Center: {x: -0.086340606, y: 0.23811792, z: -1.101431}
 --- !u!23 &1734188533
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33063,7 +33025,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807621282}
   m_LocalRotation: {x: -0.12873434, y: 0.4183331, z: 0.060029827, w: 0.89711833}
-  m_LocalPosition: {x: 0, y: 0, z: 0.54}
+  m_LocalPosition: {x: 0, y: 0, z: 1.026}
   m_LocalScale: {x: 0.00075000006, y: 0.004, z: 0.0015000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33072,7 +33034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -16.332, y: 50, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -1.36, y: 1.15}
+  m_AnchoredPosition: {x: -0.754, y: 2.552}
   m_SizeDelta: {x: 1000, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1807621284
@@ -37179,8 +37141,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6545334, y: 0.9858432, z: 1.2012634}
-  m_Center: {x: -0.37423706, y: -0.7060702, z: 0.021369934}
+  m_Size: {x: 0.6545334, y: 0.98584324, z: 0.5007447}
+  m_Center: {x: -0.3742375, y: -0.7060702, z: -0.3288905}
 --- !u!23 &2040888372
 MeshRenderer:
   m_ObjectHideFlags: 0

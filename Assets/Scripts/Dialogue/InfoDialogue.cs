@@ -84,8 +84,14 @@ public class InfoDialogue : MonoBehaviour
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
             } 
-            
-            yield return new WaitForSeconds(1.5f);
+            if (index == 0)
+            {
+                yield return new WaitForSeconds(1f);
+            }
+            else
+            {
+                yield return new WaitForSeconds(3f);
+            }
             index++;
             textComponent.text = string.Empty;
         }
