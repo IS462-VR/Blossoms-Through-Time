@@ -6,15 +6,22 @@ using UnityEngine.UI;
 public class tickManager : MonoBehaviour
 {
     public RawImage rawImage;
+    public MeshRenderer meshRenderer;
+    public enum FlowerType { Neem, Banana, Roselle }
+    public FlowerType type;
 
     public void onGrabbed()
     {
         ChangeOpacity(1f);
+        meshRenderer.enabled = false;
+        boundaryController.Instance.FlowerCollected(type, true);
     }
 
     public void onReleased()
     {
         ChangeOpacity(0f);
+        meshRenderer.enabled = true;
+        boundaryController.Instance.FlowerCollected(type, false);
     }
 
     private void ChangeOpacity(float opacity)
