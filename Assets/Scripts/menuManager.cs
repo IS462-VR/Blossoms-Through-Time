@@ -8,9 +8,15 @@ public class menuManager : MonoBehaviour
     public Button startButton;
     public Button quitButton;
 
+    [SerializeField]
+    private GameObject _naviScene;
+
     void StartGame()
     {
         Debug.Log("Starting the game.");
+
+        _naviScene.SetActive(true);
+        startButton.interactable = false;
     }
 
     void QuitGame()
