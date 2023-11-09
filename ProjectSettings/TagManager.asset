@@ -18,6 +18,8 @@ TagManager:
   - BananaLeaf
   - Roselle
   - PourZone
+  - PotWater
+  - Knife
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,6 @@ TagManager:
   - UI
   - Glow
   - Interactable
-  - 
   - 
   - 
   - 
