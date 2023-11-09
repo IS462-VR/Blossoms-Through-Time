@@ -734,7 +734,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - '*coughs* Help me please!!! *coughs*'
+  - (Grimacing in pain) Got a damn bullet tearing through me. Hurts like hell.
+  - (Struggling to speak) Can't move much with this wound, and the enemy is all around.
+    It's a death sentence for me out there.
+  - (Struggling to speak) Can't move much with this wound, and the enemy is all around.
+    It's a death sentence for me out there.
+  - (Suspicious) Are you a spy? You don't look like one of them. Maybe you can help
+    me. I need 3 plants in the clipboard.
   lineClips:
+  - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
+  - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
+  - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
+  - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
   - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
@@ -10836,10 +10847,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - hi there
-  - nice to meet u
+  - 'Let''s head to the forest to find them '
   lineClips:
-  - {fileID: 8300000, guid: 702e39140d6934745955bb5a963b3d56, type: 3}
   - {fileID: 8300000, guid: 702e39140d6934745955bb5a963b3d56, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
@@ -10925,7 +10934,7 @@ Transform:
   m_GameObject: {fileID: 1480113794}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.36, y: 1.352, z: 14.21}
+  m_LocalPosition: {x: 20.547, y: 1.524, z: 15.154}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11743,7 +11752,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 917116a889a3d774bb9cbd52033764e5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.066
+  m_Volume: 0.045
   m_Pitch: 1
   Loop: 1
   Mute: 0
