@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Scene 1.unity
     guid: d38f9a1045419a143baf2cbb635baf46
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/CreditScene.unity
     guid: 385be28a677c940829494e410c1f0d5a
   - enabled: 0
