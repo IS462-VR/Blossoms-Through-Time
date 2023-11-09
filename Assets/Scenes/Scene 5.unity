@@ -9211,7 +9211,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   startDelay:
@@ -29912,7 +29912,7 @@ Transform:
   m_GameObject: {fileID: 1373674135}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.012482524, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35861,7 +35861,7 @@ Animator:
   m_GameObject: {fileID: 1580327327}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a2df1ee318406148b1382bea3406c98, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0162f28cbdb7beb40958e6d29f860bb9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 1
@@ -35893,6 +35893,10 @@ PlayableDirector:
     value: {fileID: 1896319997}
   - key: {fileID: 6686588190962308926, guid: e68b88f9bb619694eb9c2c8e2b2b2ca2, type: 2}
     value: {fileID: 149127659}
+  - key: {fileID: 5149087058367175345, guid: e68b88f9bb619694eb9c2c8e2b2b2ca2, type: 2}
+    value: {fileID: 1373674141}
+  - key: {fileID: -5240294490654923479, guid: e68b88f9bb619694eb9c2c8e2b2b2ca2, type: 2}
+    value: {fileID: 1058255297}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1589115335
