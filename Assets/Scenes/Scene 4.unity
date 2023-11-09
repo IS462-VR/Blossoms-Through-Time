@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46474397, g: 0.25562003, b: 0.1978665, a: 1}
+  m_IndirectSpecularColor: {r: 0.464742, g: 0.2556142, b: 0.19786486, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -624,6 +624,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f4a0dc8b6fc94745bda213c4549306b, type: 3}
+--- !u!198 &23802502 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6899219585365528086, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+  m_PrefabInstance: {fileID: 1171069731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &30837803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12725,6 +12730,67 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 178788438}
   m_SourcePrefab: {fileID: 100100000, guid: a3bb7da8e50174f54b497194615b66e9, type: 3}
+--- !u!1001 &1171069731
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.445
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.434055
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70804477
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.67368835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.14592686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.15336876
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -87.151
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -24.444
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744739199643729818, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_Name
+      value: injuredSoldierPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899219585365528086, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
 --- !u!4 &1177362186 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6840526362079775181, guid: 784ea57366e32ba4bbf3cd987929a01b, type: 3}
@@ -17125,17 +17191,14 @@ PrefabInstance:
     - target: {fileID: 5117709272763234211, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.812641
-      value: 23.56
       objectReference: {fileID: 0}
     - target: {fileID: 5117709272763234211, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_LocalPosition.y
       value: 15.72
-      value: 5.34
       objectReference: {fileID: 0}
     - target: {fileID: 5117709272763234211, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_LocalPosition.z
       value: 10.082008
-      value: 14.03
       objectReference: {fileID: 0}
     - target: {fileID: 5117709272763234211, guid: 2af1d2045149fe743b81bc4d1a6f8406, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17310,6 +17373,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3429525138fd43ad803ce4e4a9576b8, type: 3}
+--- !u!1 &1628445969 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3201246768935277087, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+  m_PrefabInstance: {fileID: 1171069731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1632752679
 GameObject:
   m_ObjectHideFlags: 0
@@ -21423,6 +21491,7 @@ GameObject:
   - component: {fileID: 2060445633}
   - component: {fileID: 2060445632}
   - component: {fileID: 2060445631}
+  - component: {fileID: 2060445634}
   m_Layer: 0
   m_Name: Bandage
   m_TagString: Untagged
@@ -21600,6 +21669,21 @@ MonoBehaviour:
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
+--- !u!114 &2060445634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060445627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f57a4e6baa3542399c1b6847e7f1d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healingParticles: {fileID: 23802502}
+  bandage: {fileID: 1628445969}
+  spawnWaitTime: 0
 --- !u!1 &2074641520
 GameObject:
   m_ObjectHideFlags: 0
@@ -22910,10 +22994,6 @@ SceneRoots:
   - {fileID: 1601335384}
   - {fileID: 1476770019}
   - {fileID: 1167800271}
-  - {fileID: 1128148563}
-  - {fileID: 1362288074}
-  - {fileID: 590184739}
-  - {fileID: 1299669365}
   - {fileID: 1518501402}
   - {fileID: 1912308731}
   - {fileID: 634830673}
@@ -22931,6 +23011,7 @@ SceneRoots:
   - {fileID: 1183771788}
   - {fileID: 543450652834020984}
   - {fileID: 1911002109}
+  - {fileID: 1171069731}
   - {fileID: 240610464}
   - {fileID: 1255163904}
   - {fileID: 2007262437}
