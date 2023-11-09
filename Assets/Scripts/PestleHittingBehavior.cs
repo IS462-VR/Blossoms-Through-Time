@@ -4,6 +4,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
 {
     public GameObject bowlwplant;
     public GameObject soup;   // Reference to the Soup object.
+    public GameObject bowlwcontent;
     public GameObject pestle; // Reference to the Pestle GameObject.
     public int hitsRequired = 3;
 
@@ -12,7 +13,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
 
     private void Start()
     {
-        soup.SetActive(false); // Initially hide the Soup object.
+        //soup.SetActive(false); // Initially hide the Soup object.
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,7 +36,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
     {
         // Hide the "BowlWithPlant" object.
         bowlwplant.SetActive(false);
-
+        bowlwcontent.SetActive(true);
         // Show the "Soup" object.
         soup.SetActive(true);
 
