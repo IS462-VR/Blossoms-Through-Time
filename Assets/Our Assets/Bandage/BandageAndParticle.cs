@@ -15,6 +15,7 @@ public class BandageAndParticle : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             StartCoroutine(Heal());
+            // Heal();
         }
     }   
 
@@ -27,10 +28,11 @@ public class BandageAndParticle : MonoBehaviour
     // }
     
     IEnumerator Heal()
+    // void Heal()
     {
         // healingPotion.SetActive(false);
         healingParticles.Play();
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         bandage.SetActive(true);
     }
 }
