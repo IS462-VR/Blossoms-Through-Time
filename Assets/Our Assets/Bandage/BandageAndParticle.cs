@@ -6,17 +6,16 @@ using UnityEngine.UI;
 public class BandageAndParticle : MonoBehaviour
 {
     [SerializeField] ParticleSystem healingParticles = null; 
-    [SerializeField] GameObject bandage = null;
+    [SerializeField] GameObject placedBandage = null;
     
-    [SerializeField] GameObject healingPotion = null;
+    [SerializeField] float spawnWaitTime = 1f;
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            // StartCoroutine(Heal());
-            Heal();
-        }
+        // if (Input.GetKeyDown(KeyCode.H))
+        // {
+        //     StartCoroutine(Heal());
+        // }
     }   
 
     // void OnTriggerEnter(Collider other)
@@ -26,13 +25,15 @@ public class BandageAndParticle : MonoBehaviour
     //         healingParticles.Play();
     //     }
     // }
-    
-    // IEnumerator Heal()
-    void Heal()
+    public void Heal()
     {
-        // healingPotion.SetActive(false);
+            StartCoroutine(PutBandage());
+    }
+    
+    IEnumerator PutBandage()
+    {
         healingParticles.Play();
-        // yield return new WaitForSeconds(0.1f);
-        bandage.SetActive(true);
+        yield return new WaitForSeconds(spawnWaitTime);
+        placedBandage.SetActive(true);
     }
 }

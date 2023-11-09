@@ -15,6 +15,7 @@ TagManager:
   - BananaLeaf
   - Roselle
   - Bandage
+  - Soldier
   layers:
   - Default
   - TransparentFX
@@ -24,7 +25,6 @@ TagManager:
   - UI
   - Glow
   - Interactable
-  - 
   - 
   - 
   - 
