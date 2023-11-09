@@ -12,15 +12,14 @@ public class toBeBandaged : MonoBehaviour
         if (other.gameObject.tag == "Soldier")
         {
             StartCoroutine(PutBandage());
-            // destroy self
-            Destroy(gameObject);
         }
     }
     
     IEnumerator PutBandage()
     {
         healingParticles.Play();
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(spawnWaitTime);
         bandage.SetActive(true);
+        Destroy(gameObject);
     }
 }
