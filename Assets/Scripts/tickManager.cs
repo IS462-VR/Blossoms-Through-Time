@@ -7,7 +7,7 @@ public class tickManager : MonoBehaviour
 {
     public RawImage rawImage;
     public MeshRenderer meshRenderer;
-    public enum FlowerType { Neem, Banana, Roselle }
+    public enum FlowerType { Neem, Roselle }
     public FlowerType type;
 
     public void onGrabbed()
