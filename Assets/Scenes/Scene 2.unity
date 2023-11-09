@@ -735,7 +735,7 @@ MonoBehaviour:
   lines:
   - '*coughs* Help me please!!! *coughs*'
   lineClips:
-  - {fileID: 8300000, guid: 3fd7080158a7f71478f960419373e8ba, type: 3}
+  - {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
@@ -10839,8 +10839,8 @@ MonoBehaviour:
   - hi there
   - nice to meet u
   lineClips:
-  - {fileID: 8300000, guid: 2c5157cc4f491424aab445e49731dcfd, type: 3}
-  - {fileID: 8300000, guid: 2c5157cc4f491424aab445e49731dcfd, type: 3}
+  - {fileID: 8300000, guid: 702e39140d6934745955bb5a963b3d56, type: 3}
+  - {fileID: 8300000, guid: 702e39140d6934745955bb5a963b3d56, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
@@ -10991,8 +10991,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1949793305}
   textSpeed: 0.1
-  naviSound: {fileID: 8300000, guid: 2c5157cc4f491424aab445e49731dcfd, type: 3}
-  humanSound: {fileID: 8300000, guid: 3fd7080158a7f71478f960419373e8ba, type: 3}
+  naviSound: {fileID: 8300000, guid: 702e39140d6934745955bb5a963b3d56, type: 3}
+  humanSound: {fileID: 8300000, guid: fe1c6a29fa4657d43b54b106270c348d, type: 3}
 --- !u!225 &1503140367
 CanvasGroup:
   m_ObjectHideFlags: 0
