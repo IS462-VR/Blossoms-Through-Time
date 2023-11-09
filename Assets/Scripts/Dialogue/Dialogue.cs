@@ -17,11 +17,16 @@ public class Dialogue : MonoBehaviour
     public AudioClip naviSound;
     public AudioClip humanSound;
 
+    private Transform _mainCameraTransform;
+    private Canvas _canvas;  // Changed from CanvasGroup to Canvas
+    private Vector3 _colliderPosition;
 
 
     private void Awake()
     {
         _canvasGrp = GetComponent<CanvasGroup>();
+        _canvas = GetComponent<Canvas>();
+        _mainCameraTransform = Camera.main.transform;
         Hide();
 
         _hasActiveDialogue = false;
@@ -50,11 +55,22 @@ public class Dialogue : MonoBehaviour
 
     }
 
+    private void LateUpdate()
+    {
+        // Set the position of the canvas to follow the camera
+        transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 2;
+        transform.LookAt(_mainCameraTransform);
+        transform.Rotate(0, 180, 0);
+    }
 
-    public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource)
+
+    public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource, Vector3 colliderPosition)
     {
         _currentDialogueText = inputDialogueText;
         _currentLinesAudioSource = audioSource;
+        Debug.Log("Collider Position: " + colliderPosition);
+        _colliderPosition = colliderPosition;
+        transform.position = colliderPosition + Vector3.up * 0.9f;
     }
 
     public void PlayAudio()
