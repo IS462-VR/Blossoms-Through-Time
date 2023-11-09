@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Our Assets/Bandage/MAT_bandageBlood.mat.meta
 guid: fdfe7b615256f42808852029bbbfea5f
 NativeFormatImporter:
+========
+guid: 44e83fc5854cef9499372056eb3818f0
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 7d9e9ecfcb9ad2c62cf88d5e22343fd916e15680:Assets/Hovl Studio/Magic effects pack/Demo scene.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

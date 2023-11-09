@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Our Assets/Bandage/grabbableFlower.prefab.meta
 guid: 54287a5346d0041738e9a151876b1dcb
 PrefabImporter:
+========
+guid: 0b31d124a34f94241b3b5fbaa8745367
+folderAsset: yes
+DefaultImporter:
+>>>>>>>> 7d9e9ecfcb9ad2c62cf88d5e22343fd916e15680:Assets/Hovl Studio.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
