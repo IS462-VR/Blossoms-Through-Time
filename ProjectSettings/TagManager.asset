@@ -20,6 +20,7 @@ TagManager:
   - PourZone
   - PotWater
   - Knife
+  - RoselleBit
   layers:
   - Default
   - TransparentFX

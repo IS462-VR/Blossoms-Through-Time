@@ -3,9 +3,11 @@ using UnityEngine;
 public class ScoopingWaterAction : MonoBehaviour
 {
     public Transform rosellecup;
+    
 
     //public GameObject cup;
     private GameObject water;
+    public GameObject socket;
 
     private void Start()
     {
@@ -22,6 +24,7 @@ public class ScoopingWaterAction : MonoBehaviour
     {
         // Hide the full bowl and show the empty bowl and puddle.
         water.SetActive(true);
+        socket.SetActive(true);
     }
 
     private void OnTriggerEnter(Collider other)
