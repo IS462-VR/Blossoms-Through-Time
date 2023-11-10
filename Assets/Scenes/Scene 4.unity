@@ -8272,6 +8272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpdatedClipboard
       objectReference: {fileID: 0}
+    - target: {fileID: 8492835677567173852, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9141496041735664169, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
     m_RemovedGameObjects: []
@@ -25843,6 +25847,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2153069572684096289, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.918087
