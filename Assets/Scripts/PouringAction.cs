@@ -8,9 +8,15 @@ public class PouringAction : MonoBehaviour
 
     private GameObject fullBowl;
     private GameObject emptyBowl;
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
+
+
 
     private void Start()
     {
+        recipeSteps = obj.GetComponent<RecipeSteps>();
+
         // Find the full and empty bowl child objects.
         fullBowl = bowl.Find("BowlwMedicine").gameObject;
         emptyBowl = bowl.Find("EmptyBowl").gameObject;
@@ -28,6 +34,8 @@ public class PouringAction : MonoBehaviour
         {
             // Perform the pouring action.
             PourSoup();
+            recipeSteps.NextStep();
+            Debug.Log("works");
         }
     }
 

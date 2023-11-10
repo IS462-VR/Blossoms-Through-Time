@@ -3720,7 +3720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roselleTag: Clipboards
   oldClipBoard: {fileID: 1635519397}
-  newClipBoard: {fileID: 1012161821}
+  newClipBoard: {fileID: 714619487}
   neemPlant: {fileID: 210463544}
   rosellePlant: {fileID: 919132148845274306}
 --- !u!4 &244204417 stripped
@@ -8220,6 +8220,119 @@ MonoBehaviour:
   ThumbBlendMin: 0
   ThumbBlendMax: 0
   ShowAngleGizmo: 1
+--- !u!1001 &714619486
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 25.939
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.604
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4146213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2525607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7054087
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5164309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 110.278
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 69.252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4491611558862623244, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 191.979
+      objectReference: {fileID: 0}
+    - target: {fileID: 8492835677567173852, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      propertyPath: m_Name
+      value: UpdatedClipboard
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9141496041735664169, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6659088135486066714, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 714619492}
+  m_SourcePrefab: {fileID: 100100000, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+--- !u!1 &714619487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8492835677567173852, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+  m_PrefabInstance: {fileID: 714619486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &714619488 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4580264328377211053, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+  m_PrefabInstance: {fileID: 714619486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &714619489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3068011870073251441, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+  m_PrefabInstance: {fileID: 714619486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &714619490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 203310464718518025, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+  m_PrefabInstance: {fileID: 714619486}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &714619491 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6659088135486066714, guid: 3cdf6d6d7da8b42c98e146d5366f5fc8, type: 3}
+  m_PrefabInstance: {fileID: 714619486}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &714619492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714619491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ac29f03a4a2247f896e3c6b97c58305, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strikethroughLine: {fileID: 714619488}
+  recipeNumberText: {fileID: 714619490}
+  recipeStepText: {fileID: 714619489}
 --- !u!1 &716126875 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6957194214038595741, guid: 8f8e24c9ada503547ba312f64b58b5c3, type: 3}
@@ -11089,11 +11202,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &1012161821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5567758599995055353, guid: a3bb7da8e50174f54b497194615b66e9, type: 3}
-  m_PrefabInstance: {fileID: 1167800271}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1012161831 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4294965403326271295, guid: a3bb7da8e50174f54b497194615b66e9, type: 3}
@@ -11333,6 +11441,7 @@ MonoBehaviour:
   plant: {fileID: 210463544}
   bowl: {fileID: 1518501401}
   bowlWithPlant: {fileID: 1912308730}
+  obj: {fileID: 714619491}
 --- !u!1 &1032209543 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6957194214038595741, guid: 8f8e24c9ada503547ba312f64b58b5c3, type: 3}
@@ -21847,6 +21956,7 @@ MonoBehaviour:
   bowl: {fileID: 634830673}
   puddle: {fileID: 1746514247}
   tiltAngleThreshold: 30
+  obj: {fileID: 714619491}
 --- !u!114 &1549410638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23376,7 +23486,7 @@ MonoBehaviour:
   water: {fileID: 1517238067}
   roselleBit: {fileID: 11235200}
   roselletea: {fileID: 956062377}
-  obj: {fileID: 178788436}
+  obj: {fileID: 714619491}
 --- !u!114 &1686418741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23928,7 +24038,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rosellecup: {fileID: 1701935281}
   socket: {fileID: 1686418737}
-  obj: {fileID: 178788436}
+  obj: {fileID: 714619491}
 --- !u!65 &1701935283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24027,6 +24137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healingParticles: {fileID: 1217161415}
   spawnWaitTime: 0
+  obj: {fileID: 714619491}
 --- !u!224 &1706280709 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4213795611944346746, guid: 9e3b0bca4dce07c4cac56011bea1487d, type: 3}
@@ -26990,6 +27101,7 @@ MonoBehaviour:
   bowl: {fileID: 634830673}
   puddle: {fileID: 1746514247}
   tiltAngleThreshold: 90
+  obj: {fileID: 714619491}
 --- !u!54 &2060445631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -27120,6 +27232,7 @@ MonoBehaviour:
   healingParticles: {fileID: 1593520088}
   bandage: {fileID: 1513351003}
   spawnWaitTime: 4
+  obj: {fileID: 714619491}
 --- !u!1 &2074641520
 GameObject:
   m_ObjectHideFlags: 0
@@ -27670,6 +27783,7 @@ MonoBehaviour:
   soup: {fileID: 263887829}
   pestle: {fileID: 1416530772}
   hitsRequired: 3
+  obj: {fileID: 714619491}
 --- !u!1001 &2120603266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28272,7 +28386,7 @@ MonoBehaviour:
   roselleBits: {fileID: 810959753}
   roselleBitsUsed: {fileID: 11235200}
   knife: {fileID: 732094973}
-  obj: {fileID: 178788436}
+  obj: {fileID: 714619491}
   hitsRequired: 3
 --- !u!33 &3811987241402494219
 MeshFilter:
@@ -28469,3 +28583,4 @@ SceneRoots:
   - {fileID: 1167800271}
   - {fileID: 1420735627}
   - {fileID: 1924786746}
+  - {fileID: 714619486}
