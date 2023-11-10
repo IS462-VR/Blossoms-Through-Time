@@ -16422,6 +16422,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 629446d0a25b751468c9d7eb68c7cb56, type: 3}
+--- !u!1 &1513351003 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3201246768935277087, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+  m_PrefabInstance: {fileID: 1924786746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1517238067
 GameObject:
   m_ObjectHideFlags: 0
@@ -17482,6 +17487,11 @@ SphereCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6794768942882421962, guid: 6f4a0dc8b6fc94745bda213c4549306b, type: 3}
   m_PrefabInstance: {fileID: 22922557}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1593520088 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6899219585365528086, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+  m_PrefabInstance: {fileID: 1924786746}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1594930591
 PrefabInstance:
@@ -19025,6 +19035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rosellecup: {fileID: 1701935281}
   socket: {fileID: 1686418737}
+  obj: {fileID: 178788436}
 --- !u!65 &1701935283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20798,6 +20809,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a72aa6d70300b4d4792d8167557515ec, type: 3}
+--- !u!1001 &1924786746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.918087
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.33839548
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.109707
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7344516
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.64479786
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.13966893
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.15908875
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -82.562
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3281262742201111571, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -24.444
+      objectReference: {fileID: 0}
+    - target: {fileID: 3744739199643729818, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: m_Name
+      value: injured soldier
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
 --- !u!1001 &1952741723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21933,6 +22001,7 @@ GameObject:
   - component: {fileID: 2060445633}
   - component: {fileID: 2060445632}
   - component: {fileID: 2060445631}
+  - component: {fileID: 2060445634}
   m_Layer: 0
   m_Name: Bandage
   m_TagString: Untagged
@@ -22111,6 +22180,21 @@ MonoBehaviour:
   UseCustomInspector: 1
   lastFlickTime: 0
   FlickForce: 1
+--- !u!114 &2060445634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060445627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f57a4e6baa3542399c1b6847e7f1d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healingParticles: {fileID: 1593520088}
+  bandage: {fileID: 1513351003}
+  spawnWaitTime: 0
 --- !u!1 &2074641520
 GameObject:
   m_ObjectHideFlags: 0
@@ -23460,3 +23544,4 @@ SceneRoots:
   - {fileID: 1404632567}
   - {fileID: 1167800271}
   - {fileID: 1420735627}
+  - {fileID: 1924786746}
