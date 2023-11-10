@@ -7,8 +7,18 @@ public class toBeBandaged : MonoBehaviour
     [SerializeField] ParticleSystem healingParticles = null; 
     [SerializeField] GameObject bandage = null;
     [SerializeField] float spawnWaitTime = 0;
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
+
+    private void Start()
+    {
+        recipeSteps = obj.GetComponent<RecipeSteps>();
+        //soup.SetActive(false); // Initially hide the Soup object.
+    }
+
     void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.tag == "Soldier")
         {
             StartCoroutine(PutBandage());
@@ -21,5 +31,8 @@ public class toBeBandaged : MonoBehaviour
         yield return new WaitForSeconds(spawnWaitTime);
         bandage.SetActive(true);
         Destroy(gameObject);
+        recipeSteps.NextStep();
+        Debug.Log("works");
+
     }
 }
