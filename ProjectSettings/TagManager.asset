@@ -15,6 +15,13 @@ TagManager:
   - BananaLeaf
   - Roselle
   - Bandage
+  - BananaLeaf
+  - Roselle
+  - PourZone
+  - PotWater
+  - Knife
+  - RoselleBit
+  - Clipboards
   - Soldier
   layers:
   - Default
