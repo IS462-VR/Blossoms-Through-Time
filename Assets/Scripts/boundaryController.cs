@@ -8,6 +8,7 @@ public class boundaryController : MonoBehaviour
     public static boundaryController Instance { get; private set; }
     private Dictionary<tickManager.FlowerType, bool> collectedFlowers = new Dictionary<tickManager.FlowerType, bool>();
     public GameObject initialBoundary;
+    public GameObject clipTab;
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class boundaryController : MonoBehaviour
                 return;
             }
         }
+        clipTab.SetActive(true);
         LiftBoundary();
     }
 
