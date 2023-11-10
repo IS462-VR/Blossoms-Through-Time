@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class SocketBehavior : MonoBehaviour
+public class CupSocketBehavior : MonoBehaviour
 {
-    public string plantTag = "Plant";
-    public GameObject plant;
-    public GameObject bowl;
-    public GameObject bowlWithPlant;
+    public string roselleTag = "RoselleBit";
+    public GameObject water;
+    public GameObject roselleBit;
+    public GameObject roselletea;
     public GameObject obj;
     private RecipeSteps recipeSteps;
+
 
     private bool isSnapZoneEmpty = true;
 
@@ -17,24 +18,24 @@ public class SocketBehavior : MonoBehaviour
     {
         recipeSteps = obj.GetComponent<RecipeSteps>();
         // Record the initial position of the "BowlWithPlant" object.
-        initialBowlWithPlantPosition = bowlWithPlant.transform.position;
+        //initialBowlWithPlantPosition = roselletea.transform.position;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isSnapZoneEmpty && other.CompareTag(plantTag))
+        if (isSnapZoneEmpty && other.CompareTag(roselleTag))
         {
             // Hide the plant and bowl objects.
-            plant.SetActive(false);
-            bowl.SetActive(false);
+            water.SetActive(false);
+            roselleBit.SetActive(false);
 
             // Activate the "Bowl with Plant" object and position it at the initial position.
-            bowlWithPlant.SetActive(true);
-            bowlWithPlant.transform.position = initialBowlWithPlantPosition;
-
-            isSnapZoneEmpty = false;
+            roselletea.SetActive(true);
+            //roselletea.transform.position = initialBowlWithPlantPosition;
             recipeSteps.NextStep();
             Debug.Log("works");
+
+            isSnapZoneEmpty = false;
         }
     }
 }
