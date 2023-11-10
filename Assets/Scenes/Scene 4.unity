@@ -18485,6 +18485,7 @@ MonoBehaviour:
   water: {fileID: 1517238067}
   roselleBit: {fileID: 11235200}
   roselletea: {fileID: 956062377}
+  obj: {fileID: 178788436}
 --- !u!114 &1686418741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22196,6 +22197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f57a4e6baa3542399c1b6847e7f1d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obj: {fileID: 178788436}
   targetSceneName: Scene 5
   healingParticles: {fileID: 1593520088}
   bandage: {fileID: 1513351003}
@@ -23354,6 +23356,7 @@ MonoBehaviour:
   roselleBits: {fileID: 810959753}
   roselleBitsUsed: {fileID: 11235200}
   knife: {fileID: 732094973}
+  obj: {fileID: 178788436}
   hitsRequired: 3
 --- !u!33 &3811987241402494219
 MeshFilter:
