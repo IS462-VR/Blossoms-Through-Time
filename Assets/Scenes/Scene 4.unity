@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.46474397, g: 0.25562003, b: 0.1978665, a: 1}
+  m_IndirectSpecularColor: {r: 0.46400863, g: 0.25511634, b: 0.19693524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -20861,6 +20861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: injured soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 6899219585365528086, guid: 5b56069f5430846d9be6aa434adf83e0, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22192,9 +22196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f57a4e6baa3542399c1b6847e7f1d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetSceneName: Scene 5
   healingParticles: {fileID: 1593520088}
   bandage: {fileID: 1513351003}
-  spawnWaitTime: 0
+  spawnWaitTime: 4
 --- !u!1 &2074641520
 GameObject:
   m_ObjectHideFlags: 0
