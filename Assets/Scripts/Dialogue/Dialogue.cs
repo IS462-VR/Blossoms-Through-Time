@@ -13,9 +13,9 @@ public class Dialogue : MonoBehaviour
 
     private DialogueText _currentDialogueText = null;
     private AudioSource _currentLinesAudioSource = null;
-    public float textSpeed;
-    public GameObject _naviSceneLead;
-    public GameObject _naviSceneForest;
+    public float textSpeed; 
+    //public GameObject _naviSceneLead;
+    //public GameObject _naviSceneForest;
 
 
     public AudioClip naviSound;
@@ -195,8 +195,8 @@ public class Dialogue : MonoBehaviour
             hasFinished = true;
         }
         //audioSource.Stop();
-        _naviSceneForest.SetActive(true);
-        _naviSceneLead.SetActive(false);
+        //_naviSceneForest.SetActive(true);
+        //_naviSceneLead.SetActive(false);
 
     }
 
