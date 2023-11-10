@@ -22,6 +22,7 @@ TagManager:
   - Knife
   - RoselleBit
   - Clipboards
+  - Soldier
   layers:
   - Default
   - TransparentFX
