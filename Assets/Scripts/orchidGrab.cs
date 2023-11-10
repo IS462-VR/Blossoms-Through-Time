@@ -8,6 +8,7 @@ public class orchidGrab : MonoBehaviour
     private Rigidbody orchidRb;
     public float delayBeforeLoad = 1.0f;
     public string sceneToLoad = "Scene 2";
+    public GameObject teleportFX;
 
     public void OnGrabbed()
     {
@@ -15,6 +16,8 @@ public class orchidGrab : MonoBehaviour
         Debug.Log("Grabbed");
         orchidRb.isKinematic = false;
         orchidRb.useGravity = true;
+
+        teleportFX.SetActive(true);
 
         StartCoroutine(WaitAndLoadScene());
     }
