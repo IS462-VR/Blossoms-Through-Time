@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToDrink : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class ToDrink : MonoBehaviour
     [SerializeField] float spawnWaitTime = 0;
     public GameObject obj;
     private RecipeSteps recipeSteps;
+    private string targetGameScene = "Scene 5";
 
 
     private void Start()
@@ -31,6 +33,8 @@ public class ToDrink : MonoBehaviour
         Destroy(gameObject);
         recipeSteps.NextStep();
         Debug.Log("works");
+
+        SceneManager.LoadScene(targetGameScene);
     }
 }
 
