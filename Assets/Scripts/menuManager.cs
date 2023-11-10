@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class menuManager : MonoBehaviour
@@ -17,6 +19,9 @@ public class menuManager : MonoBehaviour
 
         _naviScene.SetActive(true);
         startButton.interactable = false;
+        startButton.GetComponent<GraphicRaycaster>().enabled = false;
+        startButton.GetComponent<Button>().enabled = false;
+
     }
 
     void QuitGame()
