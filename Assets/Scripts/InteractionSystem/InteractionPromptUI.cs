@@ -10,8 +10,6 @@ public class InteractionPromptUI : MonoBehaviour
     [SerializeField] private GameObject _uiPanel;
     [SerializeField] private TextMeshProUGUI _promptText;
 
-    private Transform _targetTransform = null;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -33,12 +31,9 @@ public class InteractionPromptUI : MonoBehaviour
 
     public bool IsDisplayed = false;
 
-    public void SetUp(string promptText, Transform targetInteractable)
+    public void SetUp(string promptText)
     {
-        _targetTransform = targetInteractable;
         _promptText.text = promptText;
-        transform.position = targetInteractable.transform.position + Vector3.up * 1.5f;
-        transform.SetParent(targetInteractable.transform, true);
         _uiPanel.SetActive(true);
         IsDisplayed = true;
     }

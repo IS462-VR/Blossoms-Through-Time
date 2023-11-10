@@ -20,16 +20,17 @@ public class Interactor : MonoBehaviour
         _numFound = Physics.OverlapSphereNonAlloc(_interactionPoint.position, _interactionPointRadius, _colliders, _interactableMask);
         if(_numFound > 0)
         {
-            Collider collider = _colliders[0];
-            _interactable = collider.GetComponent<IInteractable>();
+
+            _interactable = _colliders[0].GetComponent<IInteractable>();
             if(_interactable != null)
             {
-                if (!_interactionPromptUI.IsDisplayed) _interactionPromptUI.SetUp(_interactable.InteractionPrompt, collider.transform);
+                if (!_interactionPromptUI.IsDisplayed) _interactionPromptUI.SetUp(_interactable.InteractionPrompt);
 
                 if (Keyboard.current.eKey.wasPressedThisFrame)
                 {
 
                     _interactable.Interact(this);
+                    //_interactionPromptUI.Close(); // Close the UI
 
                 }
             }

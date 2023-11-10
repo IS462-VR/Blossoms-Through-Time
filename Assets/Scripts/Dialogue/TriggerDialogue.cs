@@ -23,12 +23,10 @@ public class TriggerDialogue : MonoBehaviour
         {
             Debug.Log("OnTriggerEnter - UI trigger object");
             DialogueText dialogueText = other.GetComponent<DialogueText>();
-            Vector3 colliderPosition = other.transform.position;
-            Debug.Log(colliderPosition);
             if (dialogueText == null) Debug.LogError("No DialogueText found for UITrigger tagged collider. Possibly you forgot to add it!!!");
             else
             {
-                _dialogue.LoadDialogueData(dialogueText, audioSource, colliderPosition);
+                _dialogue.LoadDialogueData(dialogueText, audioSource);
                 _dialogue.StartDialogue();
             }
         }
