@@ -15,6 +15,7 @@ TagManager:
   - BananaLeaf
   - Roselle
   - Bandage
+<<<<<<< HEAD
   - BananaLeaf
   - Roselle
   - PourZone
@@ -22,6 +23,9 @@ TagManager:
   - Knife
   - RoselleBit
   - Clipboards
+=======
+  - Soldier
+>>>>>>> main
   layers:
   - Default
   - TransparentFX
