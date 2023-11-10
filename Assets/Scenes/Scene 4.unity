@@ -27240,6 +27240,7 @@ MonoBehaviour:
   healingParticles: {fileID: 1593520088}
   bandage: {fileID: 1513351003}
   spawnWaitTime: 4
+  socket: {fileID: 757962964}
   obj: {fileID: 714619491}
 --- !u!1 &2074641520
 GameObject:
@@ -27788,7 +27789,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bowlwplant: {fileID: 1912308730}
-  soup: {fileID: 263887829}
+  soup: {fileID: 634830672}
   pestle: {fileID: 1416530772}
   hitsRequired: 3
   obj: {fileID: 714619491}

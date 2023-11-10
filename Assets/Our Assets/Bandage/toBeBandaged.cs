@@ -7,6 +7,7 @@ public class toBeBandaged : MonoBehaviour
     [SerializeField] ParticleSystem healingParticles = null; 
     [SerializeField] GameObject bandage = null;
     [SerializeField] float spawnWaitTime = 0;
+    public GameObject socket;
     public GameObject obj;
     private RecipeSteps recipeSteps;
 
@@ -21,6 +22,7 @@ public class toBeBandaged : MonoBehaviour
 
         if (other.gameObject.tag == "Soldier")
         {
+            socket.SetActive(true);
             StartCoroutine(PutBandage());
         }
     }

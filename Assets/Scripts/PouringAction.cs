@@ -8,6 +8,7 @@ public class PouringAction : MonoBehaviour
 
     private GameObject fullBowl;
     private GameObject emptyBowl;
+    private bool isBowlInPourZone = false;
     public GameObject obj;
     private RecipeSteps recipeSteps;
 
@@ -30,7 +31,7 @@ public class PouringAction : MonoBehaviour
     private void Update()
     {
         // Check if the bowl is tilted at the specified angle.
-        if (Vector3.Angle(Vector3.up, bowl.up) > tiltAngleThreshold)
+        if (Vector3.Angle(Vector3.up, bowl.up) > tiltAngleThreshold && isBowlInPourZone)
         {
             // Perform the pouring action.
             PourSoup();
@@ -45,5 +46,23 @@ public class PouringAction : MonoBehaviour
         fullBowl.SetActive(false);
         emptyBowl.SetActive(true);
         puddle.SetActive(true);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // Check if the full bowl enters a collider with the tag "pour zone."
+        if (other.CompareTag("PourZone"))
+        {
+            isBowlInPourZone = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        // Check if the full bowl exits a collider with the tag "pour zone."
+        if (other.CompareTag("PourZone"))
+        {
+            isBowlInPourZone = false;
+        }
     }
 }
