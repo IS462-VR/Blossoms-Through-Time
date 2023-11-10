@@ -6,6 +6,9 @@ public class CupSocketBehavior : MonoBehaviour
     public GameObject water;
     public GameObject roselleBit;
     public GameObject roselletea;
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
+
 
     private bool isSnapZoneEmpty = true;
 
@@ -13,6 +16,7 @@ public class CupSocketBehavior : MonoBehaviour
 
     private void Start()
     {
+        recipeSteps = obj.GetComponent<RecipeSteps>();
         // Record the initial position of the "BowlWithPlant" object.
         //initialBowlWithPlantPosition = roselletea.transform.position;
     }
@@ -28,6 +32,8 @@ public class CupSocketBehavior : MonoBehaviour
             // Activate the "Bowl with Plant" object and position it at the initial position.
             roselletea.SetActive(true);
             //roselletea.transform.position = initialBowlWithPlantPosition;
+            recipeSteps.NextStep();
+            Debug.Log("works");
 
             isSnapZoneEmpty = false;
         }

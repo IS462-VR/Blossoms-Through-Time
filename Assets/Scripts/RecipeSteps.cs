@@ -28,10 +28,10 @@ public class RecipeSteps : MonoBehaviour
 
         // second recipe
         recipes.Add(new string[] {
-            "Grab the Roselle and dissolve it in water",
-            "Drink the Roselle water",
-            "Hold the bowl and pour the paste onto the bandage",
-            "Grab the bandage and wrap it around the wound",
+            "Retrieve hot water",
+            "Chop roselle bud into pieces",
+            "Place roselle piece into water",
+            "Serve to soldier",
             "Recipe completed!",
             ""
         });
