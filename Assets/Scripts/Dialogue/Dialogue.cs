@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class Dialogue : MonoBehaviour
 {
@@ -23,11 +25,15 @@ public class Dialogue : MonoBehaviour
     private Canvas _canvas;  // Changed from CanvasGroup to Canvas
     private Vector3 _colliderPosition;
 
+    public Boolean hasFinished;
+    public int currentIndex = 0;
+
 
     private void Awake()
     {
         _canvasGrp = GetComponent<CanvasGroup>();
         _canvas = GetComponent<Canvas>();
+        //_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         _mainCameraTransform = Camera.main.transform;
         Hide();
 
@@ -41,25 +47,35 @@ public class Dialogue : MonoBehaviour
     private Coroutine _typeLineCoroutine = null;
     private void Update()
     {
-        if (_hasActiveDialogue && Input.GetMouseButtonDown(0))
-        {
-            //Debug.Log(textComponent.text);
-            if (textComponent.text == _currentDialogueText.lines[_currentDialogueText.lineIndex])
-            {
-                NextLine();
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = _currentDialogueText.lines[_currentDialogueText.lineIndex];
-            }
-        }
+        //    //if (_hasActiveDialogue && Input.GetMouseButtonDown(0))
+        //    if (_hasActiveDialogue)
 
+        //        //if (leftController.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool isXButtonPressedLeft) && isXButtonPressedLeft)
+        //        //{
+        //        //    Debug.Log("X button on the left controller pressed");
+        //        //    // Your code here
+        //        //}
+        //    {
+        //        //Debug.Log(textComponent.text);
+        //        if (textComponent.text == _currentDialogueText.lines[_currentDialogueText.lineIndex])
+        //        {
+        //            NextLine();
+        //        }
+        //        else
+        //        {
+        //            StopAllCoroutines();
+        //            textComponent.text = _currentDialogueText.lines[_currentDialogueText.lineIndex];
+        //        }
+        //    }
+
+        if (hasFinished)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void LateUpdate()
     {
-        // Set the position of the canvas to follow the camera
         transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 2;
         transform.LookAt(_mainCameraTransform);
         transform.Rotate(0, 180, 0);
@@ -70,7 +86,6 @@ public class Dialogue : MonoBehaviour
     {
         _currentDialogueText = inputDialogueText;
         _currentLinesAudioSource = audioSource;
-        Debug.Log("Collider Position: " + colliderPosition);
         _colliderPosition = colliderPosition;
         transform.position = colliderPosition + Vector3.up * 0.9f;
     }
@@ -107,6 +122,7 @@ public class Dialogue : MonoBehaviour
 
     public void StartDialogue()
     {
+
         if (_currentDialogueText == null)
         {
             Debug.LogError("DialogueText has yet to be loaded first!!!");
@@ -146,6 +162,16 @@ public class Dialogue : MonoBehaviour
 
                 PlayAudio();
             }
+            //while (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length)
+            //{
+            //    _currentDialogueText.lineIndex++;
+            //    Show();
+            //    textComponent.text = string.Empty;
+            //    _hasActiveDialogue = true;
+            //    if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
+            //    _typeLineCoroutine = StartCoroutine(TypeLine());
+
+            //}
 
         }
 
@@ -157,10 +183,16 @@ public class Dialogue : MonoBehaviour
         if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
         Hide();
         _hasActiveDialogue = false;
+        
 
         if (_currentDialogueText.lineIndex == _currentDialogueText.lines.Length - 1)
         {
             _currentDialogueText.hasDialogueFinished = true;
+        }
+        
+        if (currentIndex == _currentDialogueText.lines.Length)
+        {
+            hasFinished = true;
         }
         //audioSource.Stop();
         _naviSceneForest.SetActive(true);
@@ -171,13 +203,46 @@ public class Dialogue : MonoBehaviour
 
     IEnumerator TypeLine()
     {
-        _currentLinesAudioSource.clip = _currentDialogueText.lineClips[_currentDialogueText.lineIndex];
-        _currentLinesAudioSource.Play();
-        foreach (char c in _currentDialogueText.lines[_currentDialogueText.lineIndex].ToCharArray())
+        currentIndex = _currentDialogueText.lineIndex;
+        while (currentIndex < _currentDialogueText.lines.Length)
         {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            _currentLinesAudioSource.clip = _currentDialogueText.lineClips[currentIndex];
+            _currentLinesAudioSource.Play();
+
+            foreach (char c in _currentDialogueText.lines[currentIndex].ToCharArray())
+            {
+                textComponent.text += c;
+                yield return new WaitForSeconds(textSpeed);
+            }
+
+            Debug.Log("end of line");
+
+            if(currentIndex == 0)
+            {
+                yield return new WaitForSeconds(1f);
+
+            }
+            else
+            {
+                yield return new WaitForSeconds(2f);
+
+            }
+
+            currentIndex++;
+
+            //NextLine();
+            Debug.Log(currentIndex.ToString());
+            textComponent.text = string.Empty;
+
+            if(currentIndex == _currentDialogueText.lines.Length)
+            {
+                Debug.Log("reach last line. ending dialog");
+                EndDialogue();
+            }
+
         }
+        
+       
 
     }
 

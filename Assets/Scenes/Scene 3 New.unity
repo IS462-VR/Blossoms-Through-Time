@@ -22645,6 +22645,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -24845,6 +24849,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -25081,6 +25089,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -26660,6 +26672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeaf2
@@ -29881,6 +29897,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoRight
@@ -30956,6 +30976,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 11fee93952d9c454580257b35c49c728, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 11fee93952d9c454580257b35c49c728, type: 3}
       propertyPath: m_Name
       value: bananaLeaf5
@@ -32694,6 +32718,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9597492805115465185f7cd95970ef80, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 9597492805115465185f7cd95970ef80, type: 3}
       propertyPath: m_Name
       value: bananaLeaf1 (tobepicked)
@@ -32888,15 +32916,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 4795266759639050, guid: 72653085a6b827f48b10b434c7972f1c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35317,6 +35345,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -35686,6 +35718,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: b72efdd1eec19426582b9ea5c760dda3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: b72efdd1eec19426582b9ea5c760dda3, type: 3}
       propertyPath: m_Name
       value: bananaLeaf3
@@ -66225,6 +66261,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -67311,6 +67351,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -69958,6 +70002,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
@@ -71688,6 +71736,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f0d5ab8b72762418d85ecf8c65fd5b9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: f0d5ab8b72762418d85ecf8c65fd5b9c, type: 3}
       propertyPath: m_Name
       value: bananaLeaf4
@@ -71801,6 +71853,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoLeft
@@ -73514,6 +73570,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d41a8bca790345f49b3ae205465ff2f8, type: 2}
     - target: {fileID: 919132149155446097, guid: 1d8bb006858ab43ec988accd30b4de26, type: 3}
       propertyPath: m_Name
       value: bananaLeafCamoTop
