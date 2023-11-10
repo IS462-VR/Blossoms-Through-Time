@@ -6,6 +6,8 @@ public class SocketBehavior : MonoBehaviour
     public GameObject plant;
     public GameObject bowl;
     public GameObject bowlWithPlant;
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
 
     private bool isSnapZoneEmpty = true;
 
@@ -13,8 +15,11 @@ public class SocketBehavior : MonoBehaviour
 
     private void Start()
     {
+        //recipeSteps = gameObject.GetComponent<RecipeSteps>();
+        recipeSteps = obj.GetComponent<RecipeSteps>();
         // Record the initial position of the "BowlWithPlant" object.
         initialBowlWithPlantPosition = bowlWithPlant.transform.position;
+        //recipeSteps = GetComponentInChildren<RecipeSteps>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -28,6 +33,9 @@ public class SocketBehavior : MonoBehaviour
             // Activate the "Bowl with Plant" object and position it at the initial position.
             bowlWithPlant.SetActive(true);
             bowlWithPlant.transform.position = initialBowlWithPlantPosition;
+            recipeSteps.NextStep();
+            Debug.Log("works");
+            
 
             isSnapZoneEmpty = false;
         }

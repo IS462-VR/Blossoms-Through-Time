@@ -9,9 +9,14 @@ public class PouringAction : MonoBehaviour
     private GameObject fullBowl;
     private GameObject emptyBowl;
     public GameObject socket;
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
+
 
     private void Start()
     {
+        recipeSteps = obj.GetComponent<RecipeSteps>();
+
         // Find the full and empty bowl child objects.
         fullBowl = bowl.Find("BowlwMedicine").gameObject;
         emptyBowl = bowl.Find("EmptyBowl").gameObject;
@@ -29,6 +34,8 @@ public class PouringAction : MonoBehaviour
         emptyBowl.SetActive(true);
         puddle.SetActive(true);
         socket.SetActive(true);
+        recipeSteps.NextStep();
+        Debug.Log("3rd Step Works");
     }
 
     private void OnTriggerEnter(Collider other)

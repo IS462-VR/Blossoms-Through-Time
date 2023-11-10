@@ -21,6 +21,7 @@ TagManager:
   - PotWater
   - Knife
   - RoselleBit
+  - Clipboards
   layers:
   - Default
   - TransparentFX

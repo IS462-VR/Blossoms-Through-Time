@@ -6,6 +6,8 @@ public class BowlWithPlantBehavior : MonoBehaviour
     public GameObject soup;   // Reference to the Soup object.
     public GameObject bowlwcontent;
     public GameObject pestle; // Reference to the Pestle GameObject.
+    public GameObject obj;
+    private RecipeSteps recipeSteps;
     public int hitsRequired = 3;
 
     private int hitCount = 0;
@@ -13,6 +15,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
 
     private void Start()
     {
+        recipeSteps = obj.GetComponent<RecipeSteps>();
         //soup.SetActive(false); // Initially hide the Soup object.
     }
 
@@ -41,5 +44,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
         soup.SetActive(true);
 
         isBowlWithPlantVisible = false;
+        recipeSteps.NextStep();
+        Debug.Log("Second one works!");
     }
 }

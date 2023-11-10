@@ -41,13 +41,14 @@ public class RecipeSteps : MonoBehaviour
         DisplayRecipeStep();
     }
 
+    public void NextStep()
+    {
+        currentStep++;
+        StartCoroutine(DelayedDisplayRecipeStep());
+    }
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.H))
-        {
-            currentStep++;
-            StartCoroutine(DelayedDisplayRecipeStep());
-        }
 
         if(currentRecipeNumber == 0)
         {
