@@ -3698,6 +3698,7 @@ MonoBehaviour:
   newClipBoard: {fileID: 714619487}
   neemPlant: {fileID: 210463544}
   rosellePlant: {fileID: 919132148845274306}
+  placeClipboardInstruction: {fileID: 545109818}
 --- !u!4 &244204417 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6794768942882421962, guid: 6f4a0dc8b6fc94745bda213c4549306b, type: 3}
@@ -6289,7 +6290,6 @@ GameObject:
   - component: {fileID: 545109821}
   - component: {fileID: 545109820}
   - component: {fileID: 545109819}
-  - component: {fileID: 545109823}
   m_Layer: 5
   m_Name: PlaceClipboardCanvas
   m_TagString: Untagged
@@ -6368,45 +6368,18 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545109818}
   m_LocalRotation: {x: 0.1656112, y: 0.29613733, z: -0.052217, w: 0.9392279}
-  m_LocalPosition: {x: 0, y: 0, z: 16.78}
+  m_LocalPosition: {x: 0, y: 0, z: 16.839}
   m_LocalScale: {x: 0.004, y: 0.002, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1148957408}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1417781179}
   m_LocalEulerAnglesHint: {x: 20, y: 35, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 25.786, y: 1.669}
+  m_AnchoredPosition: {x: 25.576, y: 1.669}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!54 &545109823
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 545109818}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &547452608
 GameObject:
   m_ObjectHideFlags: 0
@@ -20505,6 +20478,7 @@ Transform:
   - {fileID: 242026332}
   - {fileID: 1982601357}
   - {fileID: 757962965}
+  - {fileID: 545109822}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1425962101
@@ -28513,5 +28487,4 @@ SceneRoots:
   - {fileID: 1404632567}
   - {fileID: 1924786746}
   - {fileID: 714619486}
-  - {fileID: 545109822}
   - {fileID: 977604143}

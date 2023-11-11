@@ -9,6 +9,7 @@ public class ChangeClipboard : MonoBehaviour
     public GameObject newClipBoard;
     public GameObject neemPlant;
     public GameObject rosellePlant;
+    public GameObject placeClipboardInstruction;
 
 
     private bool isSnapZoneEmpty = true;
@@ -30,6 +31,7 @@ public class ChangeClipboard : MonoBehaviour
             newClipBoard.SetActive(true);
             neemPlant.SetActive(true);
             rosellePlant.SetActive(true);
+            placeClipboardInstruction.SetActive(false);
 
             //roselletea.transform.position = initialBowlWithPlantPosition;
 
