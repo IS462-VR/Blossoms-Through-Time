@@ -16,6 +16,7 @@ TagManager:
   - Roselle
   - Bandage
   - Soldier
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
