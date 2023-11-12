@@ -20,7 +20,7 @@ public class Dialogue : MonoBehaviour
     public AudioClip humanSound;
 
     private Transform _mainCameraTransform;
-    private Canvas _canvas;  // Changed from CanvasGroup to Canvas
+    private Canvas _canvas;  
     private Vector3 _colliderPosition;
 
     public Boolean hasFinished;
@@ -31,7 +31,6 @@ public class Dialogue : MonoBehaviour
     {
         _canvasGrp = GetComponent<CanvasGroup>();
         _canvas = GetComponent<Canvas>();
-        //_canvas.renderMode = RenderMode.ScreenSpaceCamera;
         _mainCameraTransform = Camera.main.transform;
         Hide();
 
@@ -45,36 +44,12 @@ public class Dialogue : MonoBehaviour
     private Coroutine _typeLineCoroutine = null;
     private void Update()
     {
-        //    //if (_hasActiveDialogue && Input.GetMouseButtonDown(0))
-        //    if (_hasActiveDialogue)
-
-        //        //if (leftController.inputDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool isXButtonPressedLeft) && isXButtonPressedLeft)
-        //        //{
-        //        //    Debug.Log("X button on the left controller pressed");
-        //        //    // Your code here
-        //        //}
-        //    {
-        //        //Debug.Log(textComponent.text);
-        //        if (textComponent.text == _currentDialogueText.lines[_currentDialogueText.lineIndex])
-        //        {
-        //            NextLine();
-        //        }
-        //        else
-        //        {
-        //            StopAllCoroutines();
-        //            textComponent.text = _currentDialogueText.lines[_currentDialogueText.lineIndex];
-        //        }
-        //    }
-
-        if (hasFinished)
-        {
-            gameObject.SetActive(false);
-        }
+        
     }
 
     private void LateUpdate()
     {
-        transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 2;
+        transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 1.5f;
         transform.LookAt(_mainCameraTransform);
         transform.Rotate(0, 180, 0);
     }
@@ -160,16 +135,7 @@ public class Dialogue : MonoBehaviour
 
                 PlayAudio();
             }
-            //while (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length)
-            //{
-            //    _currentDialogueText.lineIndex++;
-            //    Show();
-            //    textComponent.text = string.Empty;
-            //    _hasActiveDialogue = true;
-            //    if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
-            //    _typeLineCoroutine = StartCoroutine(TypeLine());
-
-            //}
+           
 
         }
 
@@ -192,7 +158,6 @@ public class Dialogue : MonoBehaviour
         {
             hasFinished = true;
         }
-        //audioSource.Stop();
     }
 
 
@@ -225,7 +190,6 @@ public class Dialogue : MonoBehaviour
 
             currentIndex++;
 
-            //NextLine();
             Debug.Log(currentIndex.ToString());
             textComponent.text = string.Empty;
 

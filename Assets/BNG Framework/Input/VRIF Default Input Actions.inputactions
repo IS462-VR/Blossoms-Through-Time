@@ -924,6 +924,17 @@
                 },
                 {
                     "name": "",
+                    "id": "1d9d3ee9-1510-4449-8895-102c9d85b98c",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "f74f16cb-737c-48d5-97fe-0d85ddb656f9",
                     "path": "<XRController>/pointerPosition",
                     "interactions": "",
