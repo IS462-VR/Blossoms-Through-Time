@@ -11,6 +11,9 @@ public class toBeBandaged : MonoBehaviour
     public GameObject obj;
     private RecipeSteps recipeSteps;
 
+    public GameObject _naviToTable;
+    public GameObject _naviToSoldier;
+
     private void Start()
     {
         recipeSteps = obj.GetComponent<RecipeSteps>();
@@ -35,6 +38,8 @@ public class toBeBandaged : MonoBehaviour
         Destroy(gameObject);
         recipeSteps.NextStep();
         Debug.Log("works");
+        _naviToSoldier.SetActive(false);
+        _naviToTable.SetActive(true);
 
     }
 }
