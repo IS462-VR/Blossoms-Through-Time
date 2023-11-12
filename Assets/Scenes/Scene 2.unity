@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37711814, g: 0.27805132, b: 0.26654804, a: 1}
+  m_IndirectSpecularColor: {r: 0.37724903, g: 0.27809882, b: 0.26656395, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3538,7 +3538,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01404a5a30ea2e4db8fd7d34b4390b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollidersToIgnore: []
+  CollidersToIgnore:
+  - {fileID: 2098481333}
 --- !u!114 &252851936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18420,6 +18421,11 @@ MonoBehaviour:
 --- !u!82 &2098481331 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8183438871837410239, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+  m_PrefabInstance: {fileID: 2098481323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!143 &2098481333 stripped
+CharacterController:
+  m_CorrespondingSourceObject: {fileID: 2093207351243708607, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
   m_PrefabInstance: {fileID: 2098481323}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2099586801
