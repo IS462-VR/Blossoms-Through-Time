@@ -7154,7 +7154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &165101436
 Transform:
   m_ObjectHideFlags: 0
@@ -12948,7 +12948,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &238430865
 Transform:
   m_ObjectHideFlags: 0
@@ -41142,7 +41142,7 @@ Transform:
   m_GameObject: {fileID: 551395104}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.037517548, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76505,7 +76505,7 @@ Transform:
   m_GameObject: {fileID: 1088653508}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.10135765, y: 0.17477459, z: 0.65400827}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76531,6 +76531,8 @@ PlayableDirector:
     value: {fileID: 1088653511}
   - key: {fileID: -5019370882863629620, guid: 2bbeb5eabe440ad4aba5cd137f560cd3, type: 2}
     value: {fileID: 551395106}
+  - key: {fileID: 1359459971978030345, guid: 2bbeb5eabe440ad4aba5cd137f560cd3, type: 2}
+    value: {fileID: 670156510}
   m_ExposedReferences:
     m_References: []
 --- !u!95 &1088653511
@@ -77396,7 +77398,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1171803742
 Transform:
   m_ObjectHideFlags: 0
@@ -95827,6 +95829,8 @@ MonoBehaviour:
   puddle: {fileID: 1746514247}
   tiltAngleThreshold: 30
   obj: {fileID: 714619491}
+  _naviToSoldierSeq: {fileID: 1171803741}
+  _naviToClipboard: {fileID: 238430864}
 --- !u!114 &1549410638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106407,6 +106411,8 @@ PlayableDirector:
     value: {fileID: 1618075808}
   - key: {fileID: -3127917550572656213, guid: a04f33485160cec4894d81da45fe3e38, type: 2}
     value: {fileID: 888540344}
+  - key: {fileID: 8117765044011226003, guid: a04f33485160cec4894d81da45fe3e38, type: 2}
+    value: {fileID: 295515981}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &1632752679
@@ -112041,6 +112047,8 @@ MonoBehaviour:
   roselleBit: {fileID: 11235200}
   roselletea: {fileID: 956062377}
   obj: {fileID: 714619491}
+  _naviToSoldier: {fileID: 1171803741}
+  _naviToTable: {fileID: 165101435}
 --- !u!114 &1686418741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117623,6 +117631,8 @@ PlayableDirector:
     value: {fileID: 1706517450}
   - key: {fileID: -2624459417109441399, guid: c1d8682578d90ae42b8051a14f100fba, type: 2}
     value: {fileID: 1920054306}
+  - key: {fileID: 6904014662964991894, guid: c1d8682578d90ae42b8051a14f100fba, type: 2}
+    value: {fileID: 1738290711}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1725280958
@@ -117919,8 +117929,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1
-  MaxDistance: 10
+  MinDistance: 5
+  MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -124463,7 +124473,7 @@ Transform:
   m_GameObject: {fileID: 1920054304}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.049930096, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -145208,6 +145218,8 @@ MonoBehaviour:
   puddle: {fileID: 1746514247}
   tiltAngleThreshold: 90
   obj: {fileID: 714619491}
+  _naviToSoldierSeq: {fileID: 0}
+  _naviToClipboard: {fileID: 0}
 --- !u!54 &2060445631
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -145340,6 +145352,8 @@ MonoBehaviour:
   spawnWaitTime: 0
   socket: {fileID: 757962964}
   obj: {fileID: 714619491}
+  _naviToTable: {fileID: 165101435}
+  _naviToSoldier: {fileID: 1171803741}
 --- !u!1 &2074641520
 GameObject:
   m_ObjectHideFlags: 0

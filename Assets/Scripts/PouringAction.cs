@@ -12,7 +12,8 @@ public class PouringAction : MonoBehaviour
     public GameObject obj;
     private RecipeSteps recipeSteps;
 
-
+    public GameObject _naviToSoldierSeq;
+    public GameObject _naviToClipboard;
 
     private void Start()
     {
@@ -37,6 +38,8 @@ public class PouringAction : MonoBehaviour
             PourSoup();
             recipeSteps.NextStep();
             Debug.Log("works");
+            _naviToSoldierSeq.SetActive(true);
+            _naviToClipboard.SetActive(false);
         }
     }
 

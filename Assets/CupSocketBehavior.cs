@@ -9,6 +9,9 @@ public class CupSocketBehavior : MonoBehaviour
     public GameObject obj;
     private RecipeSteps recipeSteps;
 
+    public GameObject _naviToSoldier;
+    public GameObject _naviToTable;
+
 
     private bool isSnapZoneEmpty = true;
 
@@ -34,6 +37,8 @@ public class CupSocketBehavior : MonoBehaviour
             //roselletea.transform.position = initialBowlWithPlantPosition;
             recipeSteps.NextStep();
             Debug.Log("works");
+            _naviToTable.SetActive(false);
+            _naviToSoldier.SetActive(true);
 
             isSnapZoneEmpty = false;
         }
