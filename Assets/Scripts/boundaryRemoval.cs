@@ -5,6 +5,7 @@ using UnityEngine;
 public class boundaryRemoval : MonoBehaviour
 {
     public GameObject initialBoundary;
+    public GameObject clipboardInstruction;
 
     private bool clipboardGrabbed = false;
 
@@ -15,6 +16,7 @@ public class boundaryRemoval : MonoBehaviour
         if (initialBoundary != null)
         {
             initialBoundary.SetActive(false);
+            clipboardInstruction.SetActive(false);
         }
     }
 
@@ -25,6 +27,7 @@ public class boundaryRemoval : MonoBehaviour
         if (initialBoundary != null)
         {
             initialBoundary.SetActive(true);
+            clipboardInstruction.SetActive(true);
         }
     }
     // Start is called before the first frame update

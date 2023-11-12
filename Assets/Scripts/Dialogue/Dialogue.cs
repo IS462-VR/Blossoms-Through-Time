@@ -28,6 +28,8 @@ public class Dialogue : MonoBehaviour
     public Boolean hasFinished;
     public int currentIndex = 0;
 
+    public GameObject clipboardInstruction;
+
 
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class Dialogue : MonoBehaviour
         Hide();
 
         _hasActiveDialogue = false;
+        clipboardInstruction.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -159,6 +162,7 @@ public class Dialogue : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
+            clipboardInstruction.SetActive(true);
         }
     }
 
