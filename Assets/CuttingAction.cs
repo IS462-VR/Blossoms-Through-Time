@@ -47,7 +47,7 @@ public class CuttingAction : MonoBehaviour
         roselleBits.SetActive(true);
         roselleBitsUsed.SetActive(true);
         recipeSteps.NextStep();
-        Debug.Log("works");
+        Debug.Log("Cut works");
 
 
         isRoselleVisible = false;

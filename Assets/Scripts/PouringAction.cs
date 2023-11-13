@@ -37,7 +37,7 @@ public class PouringAction : MonoBehaviour
             // Perform the pouring action.
             PourSoup();
             recipeSteps.NextStep();
-            Debug.Log("works");
+            Debug.Log("pouring works");
             _naviToSoldierSeq.SetActive(true);
             _naviToClipboard.SetActive(false);
         }
@@ -49,6 +49,7 @@ public class PouringAction : MonoBehaviour
         fullBowl.SetActive(false);
         emptyBowl.SetActive(true);
         puddle.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
