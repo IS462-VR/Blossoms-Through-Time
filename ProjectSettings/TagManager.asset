@@ -17,6 +17,11 @@ TagManager:
   - Bandage
   - Soldier
   - FxTemporaire
+  - PotWater
+  - PourZone
+  - Knife
+  - Clipboards
+  - RoselleBit
   layers:
   - Default
   - TransparentFX
