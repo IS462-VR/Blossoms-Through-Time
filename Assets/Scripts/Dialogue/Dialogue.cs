@@ -52,20 +52,20 @@ public class Dialogue : MonoBehaviour
         
     }
 
-    private void LateUpdate()
-    {
-        transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 1.5f;
-        transform.LookAt(_mainCameraTransform);
-        transform.Rotate(0, 180, 0);
-    }
+    //private void LateUpdate()
+    //{
+    //    transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 1.5f;
+    //    transform.LookAt(_mainCameraTransform);
+    //    transform.Rotate(0, 180, 0);
+    //}
 
 
     public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource, Vector3 colliderPosition)
     {
         _currentDialogueText = inputDialogueText;
         _currentLinesAudioSource = audioSource;
-        _colliderPosition = colliderPosition;
-        transform.position = colliderPosition + Vector3.up * 0.9f;
+        //_colliderPosition = colliderPosition;
+        //transform.position = colliderPosition + Vector3.up * 0.9f;
     }
 
     public void PlayAudio()
@@ -181,7 +181,8 @@ public class Dialogue : MonoBehaviour
 
                 if (_currentDialogueText.lines[currentIndex] == "Let's head to the forest to find them.")
                 {
-                    textComponent.color = new Color(0, 0, 1, 1);
+                    textComponent.color = new Color(0.5f, 0.7f, 1.0f, 1);
+
                 }
                 else
                 {
