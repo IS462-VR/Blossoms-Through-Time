@@ -146505,7 +146505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeldItem: {fileID: 0}
   StartingItem: {fileID: 0}
-  CanDropItem: 1
+  CanDropItem: 0
   CanSwapItem: 0
   CanRemoveItem: 1
   ScaleItem: 0.5
