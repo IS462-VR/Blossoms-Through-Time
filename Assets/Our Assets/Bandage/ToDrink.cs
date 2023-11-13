@@ -11,6 +11,9 @@ public class ToDrink : MonoBehaviour
     private RecipeSteps recipeSteps;
     //private string targetGameScene = "Scene 5";
 
+    public GameObject _soldierAnim;
+    public GameObject soldierObj;
+
 
     private void Start()
     {
@@ -35,6 +38,8 @@ public class ToDrink : MonoBehaviour
         Debug.Log("Give Drink works");
 
         //SceneManager.LoadScene(targetGameScene);
+        soldierObj.SetActive(false);
+        _soldierAnim.SetActive(true);
     }
 }
 
