@@ -20,26 +20,27 @@ public class Scene4Dialogue : MonoBehaviour
 
     public AudioClip naviSound;
     public AudioClip humanSound;
+    public Transform mainCamera;
 
-    private Transform _mainCameraTransform;
+    //private Transform _mainCameraTransform;
     private Canvas _canvas;
-    private Vector3 _colliderPosition;
+    //private Vector3 _colliderPosition;
 
-    public Boolean hasFinished;
-    public int currentIndex = 0;
+    public Boolean hasFinished = false;
+    public  int currentIndex = 0;
 
-    public GameObject clipboardInstruction;
+    //public GameObject clipboardInstruction;
 
 
     private void Awake()
     {
         _canvasGrp = GetComponent<CanvasGroup>();
         _canvas = GetComponent<Canvas>();
-        _mainCameraTransform = Camera.main.transform;
+        //_mainCameraTransform = Camera.main.transform;
         Hide();
 
         _hasActiveDialogue = false;
-        clipboardInstruction.SetActive(false);
+        //clipboardInstruction.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -49,7 +50,10 @@ public class Scene4Dialogue : MonoBehaviour
     private Coroutine _typeLineCoroutine = null;
     private void Update()
     {
-
+        // Set the canvas position to match the camera position
+        transform.position = mainCamera.position + mainCamera.forward * 1.5f;
+        transform.LookAt(mainCamera);
+        transform.Rotate(0, 180, 0);
     }
 
     //private void LateUpdate()
@@ -60,7 +64,7 @@ public class Scene4Dialogue : MonoBehaviour
     //}
 
 
-    public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource, Vector3 colliderPosition)
+    public void LoadDialogueData(DialogueText inputDialogueText, AudioSource audioSource)
     {
         _currentDialogueText = inputDialogueText;
         _currentLinesAudioSource = audioSource;
@@ -131,7 +135,7 @@ public class Scene4Dialogue : MonoBehaviour
 
             if (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length - 1)
             {
-                _currentDialogueText.lineIndex++;
+                //_currentDialogueText.lineIndex++;
                 Show();
                 textComponent.text = string.Empty;
                 _hasActiveDialogue = true;
@@ -162,7 +166,7 @@ public class Scene4Dialogue : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
-            clipboardInstruction.SetActive(true);
+            //clipboardInstruction.SetActive(true);
         }
     }
 
@@ -215,7 +219,7 @@ public class Scene4Dialogue : MonoBehaviour
     {
         if (_currentDialogueText.lineIndex < _currentDialogueText.lines.Length - 1)
         {
-            _currentDialogueText.lineIndex++;
+            //_currentDialogueText.lineIndex++;
             textComponent.text = string.Empty;
             if (_typeLineCoroutine != null) StopCoroutine(_typeLineCoroutine);
             _typeLineCoroutine = StartCoroutine(TypeLine());
