@@ -45,6 +45,6 @@ public class BowlWithPlantBehavior : MonoBehaviour
 
         isBowlWithPlantVisible = false;
         recipeSteps.NextStep();
-        Debug.Log("works");
+        Debug.Log("hitting works");
     }
 }

@@ -10,6 +10,7 @@ public class PouringAction : MonoBehaviour
     private GameObject emptyBowl;
     private bool isBowlInPourZone = false;
     public GameObject obj;
+    public GameObject socket;
     private RecipeSteps recipeSteps;
 
     public GameObject _naviToSoldierSeq;
@@ -37,7 +38,7 @@ public class PouringAction : MonoBehaviour
             // Perform the pouring action.
             PourSoup();
             recipeSteps.NextStep();
-            Debug.Log("works");
+            Debug.Log("pouring works");
             _naviToSoldierSeq.SetActive(true);
             _naviToClipboard.SetActive(false);
         }
@@ -49,6 +50,7 @@ public class PouringAction : MonoBehaviour
         fullBowl.SetActive(false);
         emptyBowl.SetActive(true);
         puddle.SetActive(true);
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
