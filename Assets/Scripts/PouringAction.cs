@@ -10,6 +10,7 @@ public class PouringAction : MonoBehaviour
     private GameObject emptyBowl;
     private bool isBowlInPourZone = false;
     public GameObject obj;
+    public GameObject socket;
     private RecipeSteps recipeSteps;
 
     public GameObject _naviToSoldierSeq;
