@@ -175,6 +175,21 @@ public class Dialogue : MonoBehaviour
             _currentLinesAudioSource.clip = _currentDialogueText.lineClips[currentIndex];
             _currentLinesAudioSource.Play();
 
+            Debug.Log(_currentDialogueText.lines[currentIndex]);
+            if(_currentDialogueText.lines[currentIndex] != null)
+            {
+
+                if (_currentDialogueText.lines[currentIndex] == "Let's head to the forest to find them.")
+                {
+                    textComponent.color = new Color(0, 0, 1, 1);
+                }
+                else
+                {
+                    textComponent.color = new Color(1, 1, 1, 1);
+                }
+
+            }
+           
             foreach (char c in _currentDialogueText.lines[currentIndex].ToCharArray())
             {
                 textComponent.text += c;
@@ -197,6 +212,7 @@ public class Dialogue : MonoBehaviour
             currentIndex++;
 
             Debug.Log(currentIndex.ToString());
+
             textComponent.text = string.Empty;
 
             if(currentIndex == _currentDialogueText.lines.Length)
