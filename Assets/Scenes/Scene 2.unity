@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37711814, g: 0.27805132, b: 0.26654804, a: 1}
+  m_IndirectSpecularColor: {r: 0.3769339, g: 0.2782322, b: 0.26625633, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1297,14 +1297,13 @@ GameObject:
   - component: {fileID: 60927146}
   - component: {fileID: 60927145}
   - component: {fileID: 60927144}
-  - component: {fileID: 60927143}
   m_Layer: 2
   m_Name: PourCollider
   m_TagString: PourZone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &60927141
 Transform:
   m_ObjectHideFlags: 0
@@ -1354,24 +1353,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   ClosestGrabbable: {fileID: 0}
---- !u!114 &60927143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60927140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2593b26d51e024f3096110dde40402c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bowl: {fileID: 0}
-  puddle: {fileID: 945576190}
-  tiltAngleThreshold: 30
-  obj: {fileID: 0}
-  _naviToSoldierSeq: {fileID: 0}
-  _naviToClipboard: {fileID: 0}
 --- !u!114 &60927144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10312,7 +10293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &364622779
 Transform:
   m_ObjectHideFlags: 0
@@ -26531,7 +26512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1585185266344192, guid: 13d783a6f5bc5384f891f58469bef856, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4724708091167062, guid: 13d783a6f5bc5384f891f58469bef856, type: 3}
       propertyPath: m_LocalScale.x
@@ -34175,7 +34156,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157571351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f57a4e6baa3542399c1b6847e7f1d78, type: 3}
   m_Name: 
@@ -34309,7 +34290,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157571351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2593b26d51e024f3096110dde40402c7, type: 3}
   m_Name: 
@@ -34836,7 +34817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1187937597
 Transform:
   m_ObjectHideFlags: 0
@@ -36985,6 +36966,10 @@ PrefabInstance:
     - target: {fileID: 1769703487141702, guid: db4cee8a97d9d4c3d85546743d761a73, type: 3}
       propertyPath: m_Name
       value: EmptyBowl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1769703487141702, guid: db4cee8a97d9d4c3d85546743d761a73, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4212087954240444, guid: db4cee8a97d9d4c3d85546743d761a73, type: 3}
       propertyPath: m_LocalScale.x
@@ -63327,7 +63312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &2036431353
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63356,7 +63341,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036431352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e55277882226d48d3996ace4c82094eb, type: 3}
   m_Name: 
@@ -63455,7 +63440,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036431352}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58612e6bbd9c24630ba4ba3f1a8cc004, type: 3}
   m_Name: 
