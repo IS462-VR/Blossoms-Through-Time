@@ -7,20 +7,33 @@ using UnityEngine.UI;
 
 public class menuManager : MonoBehaviour
 {
-    public Button startButton;
-    public Button quitButton;
+    // public Button startButton;
+    // public Button quitButton;
+
+    public List<GameObject> objectsToActivate;
+    public List<GameObject> objectsToDeactivate;
 
     [SerializeField]
     private GameObject _naviScene;
 
-    void StartGame()
+    public void StartGame()
     {
         Debug.Log("Starting the game.");
 
         _naviScene.SetActive(true);
-        startButton.interactable = false;
-        startButton.GetComponent<GraphicRaycaster>().enabled = false;
-        startButton.GetComponent<Button>().enabled = false;
+
+        foreach (GameObject obj in objectsToActivate)
+        {
+            obj.SetActive(true);
+        }
+
+        foreach (GameObject obj in objectsToDeactivate)
+        {
+            obj.SetActive(false);
+        }
+        // startButton.interactable = false;
+        // startButton.GetComponent<GraphicRaycaster>().enabled = false;
+        // startButton.GetComponent<Button>().enabled = false;
 
     }
 
@@ -36,8 +49,8 @@ public class menuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startButton.onClick.AddListener(StartGame);
-        quitButton.onClick.AddListener(QuitGame);
+        // startButton.onClick.AddListener(StartGame);
+        // quitButton.onClick.AddListener(QuitGame);
     }
 
     // Update is called once per frame
