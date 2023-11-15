@@ -7,6 +7,7 @@ public class BowlWithPlantBehavior : MonoBehaviour
     public GameObject pestle; // Reference to the Pestle GameObject.
     public int hitsRequired = 3;
     public GameObject obj;
+    public GameObject hitBowlSound;
     private RecipeSteps recipeSteps;
 
     private int hitCount = 0;
@@ -16,7 +17,6 @@ public class BowlWithPlantBehavior : MonoBehaviour
     {
         soup.SetActive(false); // Initially hide the Soup object.
         recipeSteps = obj.GetComponent<RecipeSteps>();
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,6 +24,8 @@ public class BowlWithPlantBehavior : MonoBehaviour
         // Check if the colliding object is the pestle and the required hits have not been achieved.
         if (other.CompareTag("Pestle") && hitCount < hitsRequired && isBowlWithPlantVisible)
         {
+            hitBowlSound.GetComponent<AudioSource>().Play();
+
             // Increment the hit count.
             hitCount++;
 
