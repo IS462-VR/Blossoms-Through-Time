@@ -32,6 +32,7 @@ public class ChangeClipboard : MonoBehaviour
             neemPlant.SetActive(true);
             rosellePlant.SetActive(true);
             placeClipboardInstruction.SetActive(false);
+            gameObject.SetActive(false);
 
             //roselletea.transform.position = initialBowlWithPlantPosition;
 
