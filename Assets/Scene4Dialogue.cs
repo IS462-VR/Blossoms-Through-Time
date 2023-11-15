@@ -29,7 +29,8 @@ public class Scene4Dialogue : MonoBehaviour
     public Boolean hasFinished = false;
     public  int currentIndex = 0;
 
-    //public GameObject clipboardInstruction;
+    public GameObject clipboardInstruction;
+    private bool clipboardAppeared = true;
 
 
     private void Awake()
@@ -40,7 +41,7 @@ public class Scene4Dialogue : MonoBehaviour
         Hide();
 
         _hasActiveDialogue = false;
-        //clipboardInstruction.SetActive(false);
+        clipboardInstruction.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -168,7 +169,12 @@ public class Scene4Dialogue : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
-            //clipboardInstruction.SetActive(true);
+            if (clipboardAppeared)
+            {
+                clipboardInstruction.SetActive(true);
+                clipboardAppeared = false;
+            }
+            
         }
     }
 
