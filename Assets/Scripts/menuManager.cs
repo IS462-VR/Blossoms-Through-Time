@@ -4,25 +4,62 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using BNG;
 
 public class menuManager : MonoBehaviour
 {
-    public Button startButton;
-    public Button quitButton;
+    // public Button startButton;
+    // public Button quitButton;
+
+    public List<GameObject> objectsToActivate;
+    public List<GameObject> objectsToDeactivate;
+
+    public GameObject orchidObject;
+    private Grabbable grabbableComponent;
 
     [SerializeField]
     private GameObject _naviScene;
 
-    void StartGame()
+    public void StartGame()
     {
         Debug.Log("Starting the game.");
 
         _naviScene.SetActive(true);
-        startButton.interactable = false;
-        startButton.GetComponent<GraphicRaycaster>().enabled = false;
-        startButton.GetComponent<Button>().enabled = false;
 
+        StartCoroutine(AfterDelay(35.00f));
+
+        // startButton.interactable = false;
+        // startButton.GetComponent<GraphicRaycaster>().enabled = false;
+        // startButton.GetComponent<Button>().enabled = false;
     }
+
+    IEnumerator AfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        grabbableComponent.enabled = true;
+
+        foreach (GameObject obj in objectsToDeactivate)
+        {
+            obj.SetActive(false);
+        }
+
+        foreach (GameObject obj in objectsToActivate)
+        {
+            obj.SetActive(true);
+        }
+
+        Debug.Log("Set Grabbable to true");
+    }
+
+    // IEnumerator EnableGrabbableAfterDelay(float delay)
+    // {
+    //     yield return new WaitForSeconds(delay);
+
+    //     grabbableComponent.enabled = true;
+
+    //     Debug.Log("Set Grabbable to true");
+    // }
 
     void QuitGame()
     {
@@ -36,8 +73,9 @@ public class menuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startButton.onClick.AddListener(StartGame);
-        quitButton.onClick.AddListener(QuitGame);
+        grabbableComponent = orchidObject.GetComponent<Grabbable>();
+        // startButton.onClick.AddListener(StartGame);
+        // quitButton.onClick.AddListener(QuitGame);
     }
 
     // Update is called once per frame
