@@ -10,6 +10,7 @@ public class TriggerScene4 : MonoBehaviour
     private const string UI_TRIGGER_TAG = "Player";
     public AudioSource audioSource = null;
     private bool havestarted = true;
+    public GameObject halo;
 
     //private void Start()
     //{
@@ -46,6 +47,7 @@ public class TriggerScene4 : MonoBehaviour
                 _dialogue.StartDialogue();
             }
             havestarted = false;
+            halo.SetActive(false);
 
 
             //Debug.LogError("TriggerDialogue's audioSource for lineClips not assigned!");

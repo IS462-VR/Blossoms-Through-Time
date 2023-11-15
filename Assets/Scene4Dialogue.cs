@@ -171,13 +171,13 @@ public class Scene4Dialogue : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
-            if (clipboardAppeared)
-            {
-                clipboardInstruction.SetActive(true);
-                clipboardSocket.SetActive(true);
-                clipboardAppeared = false;
-            }
             
+        }
+        if (clipboardAppeared)
+        {
+            clipboardInstruction.SetActive(true);
+            clipboardSocket.SetActive(true);
+            clipboardAppeared = false;
         }
     }
 
