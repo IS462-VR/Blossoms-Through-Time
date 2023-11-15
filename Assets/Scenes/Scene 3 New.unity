@@ -27706,9 +27706,10 @@ MonoBehaviour:
   textComponent: {fileID: 1897072781}
   isGrabbed: 0
   lines:
-  - ' Useless Flower'
-  - Pretty flower to give people
-  - Take and toss!
+  - ' Purple Morning Glory'
+  - A plant with beautiful flowers with the tendency of ending up as an invasive
+    weed.
+  - Produces abundant blooms that could become the highlight of your garden!
   textSpeed: 0.03
 --- !u!114 &704936995
 MonoBehaviour:
@@ -56362,9 +56363,10 @@ MonoBehaviour:
   textComponent: {fileID: 969247399}
   isGrabbed: 0
   lines:
-  - ' Useless Flower'
-  - Pretty flower to give people
-  - Take and toss!
+  - ' Purple Morning Glory'
+  - A plant with beautiful flowers with the tendency of ending up as an invasive
+    weed.
+  - Produces abundant blooms that could become the highlight of your garden!
   textSpeed: 0.03
 --- !u!114 &1358662217
 MonoBehaviour:
@@ -72093,9 +72095,11 @@ MonoBehaviour:
   textComponent: {fileID: 1418485930}
   isGrabbed: 0
   lines:
-  - ' Useless Flower'
-  - Pretty blue flower to give people
-  - Decorate your room with it!
+  - ' Blue Larkspur'
+  - A flower with spiked petals in other stunning shades like pink, indigo, blue,
+    purple, and white.
+  - Looks absolutely gorgeous bunched together in summer gardens or on a coffee table
+    in a full pastel arrangement.
   textSpeed: 0.03
 --- !u!114 &1947814164
 MonoBehaviour:
