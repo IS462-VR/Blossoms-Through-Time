@@ -54,9 +54,9 @@ public class Dialogue : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 1.5f;
-        transform.LookAt(_mainCameraTransform);
-        transform.Rotate(0, 180, 0);
+        //transform.position = _mainCameraTransform.position + _mainCameraTransform.forward * 1f;
+        //transform.LookAt(_mainCameraTransform);
+        //transform.Rotate(0, 180, 0);
     }
 
 
@@ -64,8 +64,8 @@ public class Dialogue : MonoBehaviour
     {
         _currentDialogueText = inputDialogueText;
         _currentLinesAudioSource = audioSource;
-        _colliderPosition = colliderPosition;
-        transform.position = colliderPosition + Vector3.up * 0.9f;
+        //_colliderPosition = colliderPosition;
+        //transform.position = colliderPosition + Vector3.up * 0.9f;
     }
 
     public void PlayAudio()
