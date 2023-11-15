@@ -34,7 +34,7 @@ public class SocketBehavior : MonoBehaviour
 
             isSnapZoneEmpty = false;
             recipeSteps.NextStep();
-            Debug.Log("works");
+            Debug.Log("putting plant works");
         }
     }
 }

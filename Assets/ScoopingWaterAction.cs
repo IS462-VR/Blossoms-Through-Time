@@ -30,7 +30,8 @@ public class ScoopingWaterAction : MonoBehaviour
         water.SetActive(true);
         socket.SetActive(true);
         recipeSteps.NextStep();
-        Debug.Log("works");
+        socket.SetActive(true);
+        Debug.Log("scooping works");
     }
 
     private void OnTriggerEnter(Collider other)
@@ -39,6 +40,7 @@ public class ScoopingWaterAction : MonoBehaviour
         if (other.CompareTag("PotWater"))
         {
             FillWater();
+            other.gameObject.SetActive(false);
         }
     }
 }
