@@ -29,6 +29,8 @@ public class Dialogue : MonoBehaviour
     public int currentIndex = 0;
 
     public GameObject clipboardInstruction;
+    public GameObject halo;
+
 
 
     private void Awake()
@@ -37,7 +39,11 @@ public class Dialogue : MonoBehaviour
         _canvas = GetComponent<Canvas>();
         _mainCameraTransform = Camera.main.transform;
         Hide();
+        if(halo != null)
+        {
 
+        halo.SetActive(false);
+        }
         _hasActiveDialogue = false;
         clipboardInstruction.SetActive(false);
     }
@@ -107,6 +113,11 @@ public class Dialogue : MonoBehaviour
             return;
         }
 
+        //if(halo!= null)
+        //{
+        //    halo.SetActive(false);
+        //}
+
         if (!_currentDialogueText.hasDialogueStarted)
         {
 
@@ -163,7 +174,9 @@ public class Dialogue : MonoBehaviour
         {
             hasFinished = true;
             clipboardInstruction.SetActive(true);
+            halo.SetActive(true);
         }
+
     }
 
 
@@ -178,7 +191,12 @@ public class Dialogue : MonoBehaviour
             Debug.Log(_currentDialogueText.lines[currentIndex]);
             if (_currentDialogueText.lines[currentIndex] != null)
             {
-
+                //if (_currentDialogueText.lines[currentIndex] == "Are you a spy? You don't look like one of them. Maybe you can help me. I need 3 plants in the clipboard.")
+                //{
+                //    Debug.Log("last line running");
+                //    //yield return new WaitForSeconds(1f);
+                //    //halo.SetActive(true);
+                //}
                 if (_currentDialogueText.lines[currentIndex] == "Let's head to the forest to find them.")
                 {
                     textComponent.color = new Color(0, 0, 1, 1);

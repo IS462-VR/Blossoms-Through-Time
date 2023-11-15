@@ -12,6 +12,8 @@ public class TriggerDialogue : MonoBehaviour
 
     private void Awake()
     {
+
+
         if (audioSource == null)
         {
             Debug.LogError("TriggerDialogue's audioSource for lineClips not assigned!");

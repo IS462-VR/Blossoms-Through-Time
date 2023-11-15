@@ -10,9 +10,12 @@ public class TriggerHumanDialogue : MonoBehaviour
     public AudioSource audioSource = null;
     public GameObject obj;
     private bool hasplayed = true;
+    public GameObject halo;
+
 
     private void Awake()
     {
+       
         if (audioSource == null)
         {
             Debug.LogError("TriggerDialogue's audioSource for lineClips not assigned!");
@@ -33,9 +36,10 @@ public class TriggerHumanDialogue : MonoBehaviour
             {
                 _dialogue.LoadDialogueData(dialogueText, audioSource, colliderPosition);
                 _dialogue.StartDialogue();
-
+                //halo.SetActive(true);
             }
             hasplayed = false;
+           
         }
     }
 

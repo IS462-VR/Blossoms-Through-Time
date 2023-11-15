@@ -28,7 +28,7 @@ public class NaviDialoguescene2part1 : MonoBehaviour
     public Boolean hasFinished;
     public int currentIndex = 0;
 
-    public GameObject clipboardInstruction;
+    //public GameObject clipboardInstruction;
 
 
     private void Awake()
@@ -39,7 +39,7 @@ public class NaviDialoguescene2part1 : MonoBehaviour
         Hide();
 
         _hasActiveDialogue = false;
-        clipboardInstruction.SetActive(false);
+        //clipboardInstruction.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -162,7 +162,7 @@ public class NaviDialoguescene2part1 : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
-            clipboardInstruction.SetActive(true);
+            //clipboardInstruction.SetActive(true);
         }
     }
 
