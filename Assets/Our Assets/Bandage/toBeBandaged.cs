@@ -9,13 +9,16 @@ public class toBeBandaged : MonoBehaviour
     [SerializeField] float spawnWaitTime = 0;
     public GameObject obj;
     private RecipeSteps recipeSteps;
+    //public TriggerSecondDialogue trig;
 
     public GameObject _naviToTable;
     public GameObject _naviToSoldier;
+    public GameObject halo;
 
     private void Start()
     {
         recipeSteps = obj.GetComponent<RecipeSteps>();
+        halo.SetActive(false);
         //soup.SetActive(false); // Initially hide the Soup object.
     }
 
@@ -34,10 +37,12 @@ public class toBeBandaged : MonoBehaviour
         yield return new WaitForSeconds(spawnWaitTime);
         bandage.SetActive(true);
         Destroy(gameObject);
+        //trig.TriggerDialogue();
         recipeSteps.NextRecipe();
         Debug.Log("Give Bandage works");
         _naviToSoldier.SetActive(false);
         _naviToTable.SetActive(true);
+        halo.SetActive(true);
 
     }
 }
