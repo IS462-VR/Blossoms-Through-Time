@@ -1,9 +1,10 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
-public class TriggerDialogue : MonoBehaviour
+public class TriggerHumanDialogue : MonoBehaviour
 {
-    [SerializeField] private NaviDialoguescene2part1 _dialogue = null;
+    [SerializeField] private Dialogue _dialogue = null;
 
     private const string UI_TRIGGER_TAG = "Player";
     public AudioSource audioSource = null;
@@ -26,7 +27,7 @@ public class TriggerDialogue : MonoBehaviour
             Debug.Log("OnTriggerEnter - UI trigger object");
             DialogueText dialogueText = obj.GetComponent<DialogueText>();
             Vector3 colliderPosition = other.transform.position;
-            Debug.Log(colliderPosition);
+            //Debug.Log(colliderPosition);
             if (dialogueText == null) Debug.LogError("No DialogueText found for UITrigger tagged collider. Possibly you forgot to add it!!!");
             else
             {

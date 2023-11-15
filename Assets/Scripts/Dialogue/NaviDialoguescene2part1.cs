@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class Dialogue : MonoBehaviour
+public class NaviDialoguescene2part1 : MonoBehaviour
 {
     public TextMeshProUGUI textComponent;
     private CanvasGroup _canvasGrp = null;
