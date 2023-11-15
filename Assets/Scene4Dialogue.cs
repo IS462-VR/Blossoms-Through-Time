@@ -31,6 +31,7 @@ public class Scene4Dialogue : MonoBehaviour
 
     public GameObject clipboardInstruction;
     private bool clipboardAppeared = true;
+    public GameObject clipboardSocket;
 
 
     private void Awake()
@@ -42,6 +43,7 @@ public class Scene4Dialogue : MonoBehaviour
 
         _hasActiveDialogue = false;
         clipboardInstruction.SetActive(false);
+        clipboardSocket.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -172,6 +174,7 @@ public class Scene4Dialogue : MonoBehaviour
             if (clipboardAppeared)
             {
                 clipboardInstruction.SetActive(true);
+                clipboardSocket.SetActive(true);
                 clipboardAppeared = false;
             }
             
