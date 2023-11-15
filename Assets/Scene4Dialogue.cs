@@ -51,9 +51,11 @@ public class Scene4Dialogue : MonoBehaviour
     private void Update()
     {
         // Set the canvas position to match the camera position
-        transform.position = mainCamera.position + mainCamera.forward * 1.5f;
-        transform.LookAt(mainCamera);
-        transform.Rotate(0, 180, 0);
+        //transform.position = mainCamera.position + mainCamera.forward;
+        //transform.position = mainCamera.position + mainCamera.forward * 1.5f;
+
+        //transform.LookAt(mainCamera);
+        //transform.Rotate(0, 180, 0);
     }
 
     //private void LateUpdate()
