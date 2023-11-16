@@ -24885,7 +24885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &478233928
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32120,7 +32120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &797548711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34930,8 +34930,8 @@ Transform:
   m_GameObject: {fileID: 927925174}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9573224, z: -0, w: 0.28902215}
-  m_LocalPosition: {x: -55.693245, y: 56.787003, z: 17.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -55.241, y: 57.517, z: 17.033}
+  m_LocalScale: {x: 1.3447, y: 1.3447, z: 1.3447}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714430063}
@@ -34948,7 +34948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &927925177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37766,8 +37766,8 @@ Transform:
   m_GameObject: {fileID: 1037294893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.583, y: 57.44037, z: -8.502}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -35.287, y: 57.669, z: -7.47}
+  m_LocalScale: {x: 2.0567713, y: 0.51038486, z: 2.0567713}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714430063}
@@ -37784,7 +37784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!114 &1037294900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39806,8 +39806,8 @@ Transform:
   m_GameObject: {fileID: 1124849166}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.9, y: 56.8752, z: 16.017}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -53.328, y: 57.517, z: 14.747}
+  m_LocalScale: {x: 1.7672415, y: 0.61371344, z: 1.4587218}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714430063}
@@ -39824,7 +39824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &1124849169
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52056,7 +52056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: It'll dangerous to move around without cover, use this for camouflage!
 --- !u!4 &1246849605
 Transform:
   m_ObjectHideFlags: 0
@@ -52098,8 +52098,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 4.092144, y: 0.79871553, z: 2.1451993}
-  m_Center: {x: 1.3999665, y: 0.2957148, z: 0.013416609}
+  m_Size: {x: 5.5, y: 0.79871553, z: 3.89}
+  m_Center: {x: 1.67, y: 0.2957148, z: 0.94}
 --- !u!1001 &1252923934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61818,7 +61818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &1433230779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72114,7 +72114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &1734188532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72195,8 +72195,8 @@ Transform:
   m_GameObject: {fileID: 1734188530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -43.53, y: 57.752, z: -7.886}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -43.196, y: 57.879, z: -6.915}
+  m_LocalScale: {x: 1.9782102, y: 0.46542102, z: 1.9782102}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714430063}
@@ -78774,8 +78774,8 @@ Transform:
   m_GameObject: {fileID: 2040888368}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.24879406, z: -0, w: 0.9685564}
-  m_LocalPosition: {x: -56.527245, y: 56.796997, z: 13.517001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -56.21, y: 57.634, z: 13.813}
+  m_LocalScale: {x: 1.5745, y: 0.5859344, z: 1.5745}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 714430063}
@@ -78792,7 +78792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dddc73e90a7fedd4e9ae83f56767c603, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prompt: Press X to pick up.
+  _prompt: Hold "Grab" button to pick up.
 --- !u!65 &2040888371
 BoxCollider:
   m_ObjectHideFlags: 0
