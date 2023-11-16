@@ -13,6 +13,7 @@ public class ToDrink : MonoBehaviour
 
     public GameObject _soldierAnim;
     public GameObject soldierObj;
+    public TriggerSoldierThankYou trig;
 
 
     private void Start()
@@ -40,6 +41,7 @@ public class ToDrink : MonoBehaviour
         //SceneManager.LoadScene(targetGameScene);
         soldierObj.SetActive(false);
         _soldierAnim.SetActive(true);
+        trig.TriggerDialogue();
     }
 }
 
