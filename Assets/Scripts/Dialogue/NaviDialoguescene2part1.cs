@@ -30,7 +30,8 @@ public class NaviDialoguescene2part1 : MonoBehaviour
 
     //public GameObject clipboardInstruction;
 
-
+    public GameObject _naviAppear;
+    public GameObject _naviGuide;
     private void Awake()
     {
         _canvasGrp = GetComponent<CanvasGroup>();
@@ -163,6 +164,8 @@ public class NaviDialoguescene2part1 : MonoBehaviour
         {
             hasFinished = true;
             //clipboardInstruction.SetActive(true);
+            _naviAppear.SetActive(false);
+            _naviGuide.SetActive(true);
         }
     }
 

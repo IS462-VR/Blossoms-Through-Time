@@ -28,10 +28,10 @@ public class Dialogue : MonoBehaviour
     public Boolean hasFinished;
     public int currentIndex = 0;
 
-    public GameObject clipboardInstruction;
     public GameObject halo;
 
-
+    public GameObject _naviClipboard;
+    public GameObject _naviGuide;
 
     private void Awake()
     {
@@ -45,7 +45,6 @@ public class Dialogue : MonoBehaviour
         halo.SetActive(false);
         }
         _hasActiveDialogue = false;
-        clipboardInstruction.SetActive(false);
     }
 
     private void Show() { _canvasGrp.alpha = 1.0f; }
@@ -173,8 +172,9 @@ public class Dialogue : MonoBehaviour
         if (currentIndex == _currentDialogueText.lines.Length)
         {
             hasFinished = true;
-            clipboardInstruction.SetActive(true);
             halo.SetActive(true);
+            _naviGuide.SetActive(false);
+            _naviClipboard.SetActive(true);
         }
 
     }
