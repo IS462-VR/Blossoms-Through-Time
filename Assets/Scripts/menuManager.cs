@@ -20,11 +20,18 @@ public class menuManager : MonoBehaviour
     [SerializeField]
     private GameObject _naviScene;
 
+    private bool gameStarted = false;
+
     public void StartGame()
     {
-        Debug.Log("Starting the game.");
+        if (!gameStarted)
+        {
+            Debug.Log("Starting the game.");
 
-        _naviScene.SetActive(true);
+            _naviScene.SetActive(true);
+            gameStarted = true;
+        }
+        
 
         StartCoroutine(AfterDelay(35.00f));
 

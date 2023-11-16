@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37711814, g: 0.27805132, b: 0.26654804, a: 1}
+  m_IndirectSpecularColor: {r: 0.37724903, g: 0.27809882, b: 0.26656395, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -65249,6 +65249,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3719865058671406942, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4095492992128682948, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -65277,8 +65281,16 @@ PrefabInstance:
       propertyPath: RemoteGrabLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6065732222583390601, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: locomotionToggleInput.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7595643689753784246, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8320362179852516125, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8416742705891564269, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
@@ -65353,7 +65365,8 @@ PrefabInstance:
       propertyPath: OnDetachEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4095492992128682948, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2683195716758988412, guid: 4ac7df741a9c0a2418ec19477729ee3d, type: 3}
