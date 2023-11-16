@@ -1380,7 +1380,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e85c29dcf743bd841b354101c32869bd, type: 3}
   - {fileID: 8300000, guid: 95c3e64fa0d2c994fbf7a20365a56312, type: 3}
   - {fileID: 8300000, guid: ea18172c6022f924d956aa96079a4637, type: 3}
-  - {fileID: 8300000, guid: 21083ec24a264f44081ff63e4693fb00, type: 3}
+  - {fileID: 8300000, guid: 4b4b6f3dc86a06f4c8d0e327f58c2720, type: 3}
   hasDialogueStarted: 0
   hasDialogueFinished: 0
   lineIndex: 0
