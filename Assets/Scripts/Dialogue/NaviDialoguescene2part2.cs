@@ -174,19 +174,19 @@ public class NaviDialoguescene2part2 : MonoBehaviour
             _currentLinesAudioSource.Play();
 
             Debug.Log(_currentDialogueText.lines[currentIndex]);
-            if (_currentDialogueText.lines[currentIndex] != null)
-            {
+            //if (_currentDialogueText.lines[currentIndex] != null)
+            //{
 
-                if (_currentDialogueText.lines[currentIndex] == "Let's head to the forest to find them.")
-                {
-                    textComponent.color = new Color(0, 0, 1, 1);
-                }
-                else
-                {
-                    textComponent.color = new Color(1, 1, 1, 1);
-                }
+                //if (_currentDialogueText.lines[currentIndex] == "Let's head to the forest to find them.")
+                //{
+                //    textComponent.color = new Color(0, 0, 1, 1);
+                //}
+                //else
+                //{
+                //    textComponent.color = new Color(1, 1, 1, 1);
+                //}
 
-            }
+            //}
 
             foreach (char c in _currentDialogueText.lines[currentIndex].ToCharArray())
             {
